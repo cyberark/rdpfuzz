@@ -1,44 +1,30 @@
-# {Your project name}
-TODO: Insert brief description of your project
+# rdpfuzz
+Tools for fuzzing RDP.
+
+This project contains:
+1. DynamoRIO that was modified to be able to attach to running processes.
+2. WinAFL that was modified to use the DynamoRIO attach functionality, use background fuzzing, and interact with the rdpfuzzagent.
+3. FreeRDP that was modified to send fuzzing messages. 
+4. rdpfuzzagent - an agent enforcing protocol requirements, and sending messages over an RDP connection.
+5. Auxiliary scripts.
+
+## References:
+For more comments, suggestions or questions, contact Or Ben-Porath ([@OrBenPorath](https://twitter.com/OrBenPorath)) and Shaked Reiner ([@ShakReiner](https://twitter.com/ShakReiner)) from CyberArk Labs.
 
 ## Certification level
-TODO: Select the appropriate certification level section below, and remove all others.
 
-{Community}
 ![](https://img.shields.io/badge/Certification%20Level-Community-28A745?link=https://github.com/cyberark/community/blob/master/Conjur/conventions/certification-levels.md)
 
 This repo is a **Community** level project. It's a community contributed project that **is not reviewed or supported
 by CyberArk**. For more detailed information on our certification levels, see [our community guidelines](https://github.com/cyberark/community/blob/master/Conjur/conventions/certification-levels.md#community).
 
-{Trusted}
-![](https://img.shields.io/badge/Certification%20Level-Trusted-007BFF?link=https://github.com/cyberark/community/blob/master/Conjur/conventions/certification-levels.md)
+## Notices
+Use the included third party projects only according to their license:
 
-This repo is a **Trusted** level project. It's been reviewed by CyberArk to verify that it will securely
-work with Conjur Open Source as documented. For more detailed  information on our certification levels, see
-[our community guidelines](https://github.com/cyberark/community/blob/master/Conjur/conventions/certification-levels.md#community).
-
-{Certified}
-![](https://img.shields.io/badge/Certification%20Level-Certified-6C757D?link=https://github.com/cyberark/community/blob/master/Conjur/conventions/certification-levels.md)
-
-This repo is a **Certified** level project. It's been reviewed by CyberArk to verify that it will securely
-work with CyberArk Conjur Enterprise as documented. In addition, CyberArk offers Enterprise-level support for these features. For
-more detailed  information on our certification levels, see [our community guidelines](https://github.com/cyberark/community/blob/master/Conjur/conventions/certification-levels.md#community).
-
-## Requirements
-
-TODO: Add any requirements that apply to your project here. Which Conjur Open Source / Enterprise versions is it
-compatible with? Does it integrate with other tools / projects - and if so, what versions of those
-does it require?
-
-## Usage instructions
-
-TODO: add details for how to use your project. Examples can be quite nice here. You should have
-a high level overview of the benefit of your project and its main use cases.
-
-## Contributing
-
-We welcome contributions of all kinds to this repository. For instructions on how to get started and descriptions
-of our development workflows, please see our [contributing guide](CONTRIBUTING.md).
+1. [DynamoRIO](https://github.com/DynamoRIO/dynamorio) - [BSD
+license](https://github.com/DynamoRIO/dynamorio/blob/master/License.txt).
+2. [WinAFL](https://github.com/googleprojectzero/winafl) - [Apache 2.0 license](https://github.com/googleprojectzero/winafl/blob/master/LICENSE).
+3. [FreeRDP](https://github.com/FreeRDP/FreeRDP) - [Apache 2.0 license](https://github.com/FreeRDP/FreeRDP/blob/master/LICENSE).
 
 ## License
 
@@ -57,3 +43,5 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 For the full license text see [`LICENSE`](LICENSE).
+
+
