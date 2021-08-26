@@ -1,0 +1,149 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/cyber/rdp/FreeRDP/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_1437e"
+[1/2] Building C object CMakeFiles/cmTC_1437e.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_1437e
+FAILED: cmTC_1437e 
+: && /usr/bin/cc -fPIC -Wall -Wno-unused-result -Wno-unused-but-set-variable -Wno-deprecated-declarations -fvisibility=hidden -Wimplicit-function-declaration -Wredundant-decls  -rdynamic CMakeFiles/cmTC_1437e.dir/CheckSymbolExists.c.o  -o cmTC_1437e   && :
+CMakeFiles/cmTC_1437e.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+File /home/cyber/rdp/FreeRDP/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/cyber/rdp/FreeRDP/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_dc688"
+[1/2] Building C object CMakeFiles/cmTC_dc688.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_dc688
+FAILED: cmTC_dc688 
+: && /usr/bin/cc -fPIC -Wall -Wno-unused-result -Wno-unused-but-set-variable -Wno-deprecated-declarations -fvisibility=hidden -Wimplicit-function-declaration -Wredundant-decls -DCHECK_FUNCTION_EXISTS=pthread_create  -rdynamic CMakeFiles/cmTC_dc688.dir/CheckFunctionExists.c.o  -o cmTC_dc688  -lpthreads && :
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+Determining if the pthread_mutex_timedlock exist failed with the following output:
+Change Dir: /home/cyber/rdp/FreeRDP/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_29f3d"
+[1/2] Building C object CMakeFiles/cmTC_29f3d.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_29f3d
+FAILED: cmTC_29f3d 
+: && /usr/bin/cc -fPIC -Wall -Wno-unused-result -Wno-unused-but-set-variable -Wno-deprecated-declarations -fvisibility=hidden -Wimplicit-function-declaration -Wredundant-decls  -rdynamic CMakeFiles/cmTC_29f3d.dir/CheckSymbolExists.c.o  -o cmTC_29f3d   && :
+CMakeFiles/cmTC_29f3d.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_mutex_timedlock'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+File /home/cyber/rdp/FreeRDP/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_mutex_timedlock
+  return ((int*)(&pthread_mutex_timedlock))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if files sys/modem.h exist failed with the following output:
+Change Dir: /home/cyber/rdp/FreeRDP/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_45354"
+[1/2] Building C object CMakeFiles/cmTC_45354.dir/CheckIncludeFiles.c.o
+FAILED: CMakeFiles/cmTC_45354.dir/CheckIncludeFiles.c.o 
+/usr/bin/cc   -fPIC -Wall -Wno-unused-result -Wno-unused-but-set-variable -Wno-deprecated-declarations -fvisibility=hidden -Wimplicit-function-declaration -Wredundant-decls -fno-omit-frame-pointer  -fPIE -o CMakeFiles/cmTC_45354.dir/CheckIncludeFiles.c.o   -c CheckIncludeFiles.c
+CheckIncludeFiles.c:2:10: fatal error: sys/modem.h: No such file or directory
+ #include <sys/modem.h>
+          ^~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+Source:
+/* */
+#include <sys/modem.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/filio.h exist failed with the following output:
+Change Dir: /home/cyber/rdp/FreeRDP/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_31caa"
+[1/2] Building C object CMakeFiles/cmTC_31caa.dir/CheckIncludeFiles.c.o
+FAILED: CMakeFiles/cmTC_31caa.dir/CheckIncludeFiles.c.o 
+/usr/bin/cc   -fPIC -Wall -Wno-unused-result -Wno-unused-but-set-variable -Wno-deprecated-declarations -fvisibility=hidden -Wimplicit-function-declaration -Wredundant-decls -fno-omit-frame-pointer  -fPIE -o CMakeFiles/cmTC_31caa.dir/CheckIncludeFiles.c.o   -c CheckIncludeFiles.c
+CheckIncludeFiles.c:2:10: fatal error: sys/filio.h: No such file or directory
+ #include <sys/filio.h>
+          ^~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+Source:
+/* */
+#include <sys/filio.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/sockio.h exist failed with the following output:
+Change Dir: /home/cyber/rdp/FreeRDP/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_3c3d1"
+[1/2] Building C object CMakeFiles/cmTC_3c3d1.dir/CheckIncludeFiles.c.o
+FAILED: CMakeFiles/cmTC_3c3d1.dir/CheckIncludeFiles.c.o 
+/usr/bin/cc   -fPIC -Wall -Wno-unused-result -Wno-unused-but-set-variable -Wno-deprecated-declarations -fvisibility=hidden -Wimplicit-function-declaration -Wredundant-decls -fno-omit-frame-pointer  -fPIE -o CMakeFiles/cmTC_3c3d1.dir/CheckIncludeFiles.c.o   -c CheckIncludeFiles.c
+CheckIncludeFiles.c:2:10: fatal error: sys/sockio.h: No such file or directory
+ #include <sys/sockio.h>
+          ^~~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+Source:
+/* */
+#include <sys/sockio.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/strtio.h exist failed with the following output:
+Change Dir: /home/cyber/rdp/FreeRDP/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_7a9d9"
+[1/2] Building C object CMakeFiles/cmTC_7a9d9.dir/CheckIncludeFiles.c.o
+FAILED: CMakeFiles/cmTC_7a9d9.dir/CheckIncludeFiles.c.o 
+/usr/bin/cc   -fPIC -Wall -Wno-unused-result -Wno-unused-but-set-variable -Wno-deprecated-declarations -fvisibility=hidden -Wimplicit-function-declaration -Wredundant-decls -fno-omit-frame-pointer  -fPIE -o CMakeFiles/cmTC_7a9d9.dir/CheckIncludeFiles.c.o   -c CheckIncludeFiles.c
+CheckIncludeFiles.c:2:10: fatal error: sys/strtio.h: No such file or directory
+ #include <sys/strtio.h>
+          ^~~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+Source:
+/* */
+#include <sys/strtio.h>
+
+
+int main(void){return 0;}
+

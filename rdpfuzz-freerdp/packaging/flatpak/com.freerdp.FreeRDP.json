@@ -1,0 +1,127 @@
+{
+    "app-id": "com.freerdp.FreeRDP",
+    "runtime": "org.freedesktop.Platform",
+    "runtime-version": "19.08",
+    "sdk": "org.freedesktop.Sdk",
+    "build-options" : {
+        "cflags": "-O2 -g",
+        "cxxflags": "-O2 -g"
+    },
+    "command": "freerdp.sh",
+    "cleanup": [
+    ],
+    "finish-args": [
+        /* X11 + XShm access */
+        "--share=ipc",
+        "--socket=x11",
+        "--socket=fallback-x11",
+        /* Needs to talk to the network */
+        "--share=network",
+        /* Play sounds redirected from guests */
+        "--socket=pulseaudio",
+        /* Wayland access */
+        "--socket=wayland",
+        /* Allow rw access to download folder */
+        "--filesystem=xdg-download"
+    ],
+    "add-build-extensions": {
+      "org.freedesktop.Platform.ffmpeg-full": {
+        "directory": "lib/ffmpeg",
+        "version": "19.08",
+        "add-ld-path": "."
+      },
+      "org.freedesktop.Platform.openh264": {
+        "directory": "lib/openh264",
+        "version": "2.1.0",
+        "add-ld-path": "."
+      }
+    },
+    "modules": [
+    {
+        /**
+         * libfreerdp use xprop to try to detect keyboard layout
+         */
+        "name": "xprop",
+        "sources": [
+        {
+            "type": "archive",
+            "url": "https://xorg.freedesktop.org/releases/individual/app/xprop-1.2.4.tar.bz2",
+            "sha256": "8c77fb096e46c60032b7e2bde9492c3ffcc18734f50b395085a5f10bfd3cf753"
+        }
+        ]
+    },
+    {
+        "name": "libusb",
+        "config-opts": ["--disable-static"],
+        "sources": [
+            {
+                "type": "git",
+                "url": "https://github.com/libusb/libusb.git",
+                "tag": "v1.0.23",
+                "commit": "e782eeb2514266f6738e242cdcb18e3ae1ed06fa"
+            }
+        ]
+    },
+    {
+        "name": "pcsc",
+        "config-opts": [
+            "--disable-libsystemd",
+            "--enable-pic",
+            "--disable-libusb",
+            "--enable-shared",
+            "--with-systemdsystemunitdir=/app/lib/systemd/"
+        ],
+        "sources": [
+            {
+                "type": "git",
+                "url": "https://github.com/LudovicRousseau/PCSC.git",
+                "tag": "pcsc-1.9.0",
+                "commit": "e796a0f12fbefa459bff0d25e27089615fa91f21"
+            }
+        ]
+    },
+    {
+        "name": "wrapper",
+        "buildsystem": "simple",
+        "build-commands": [
+                "install -D freerdp.sh /app/bin/freerdp.sh"
+            ],
+        "sources": [
+                {
+                     "type": "file",
+                     "path": "freerdp.sh"
+                }
+            ]
+    },
+    {
+        "name": "freerdp",
+        "buildsystem": "cmake-ninja",
+        "cleanup": [
+        ],
+        "config-opts": [
+        "-DCMAKE_BUILD_TYPE:STRING=Release",
+        "-DCMAKE_INSTALL_LIBDIR:PATH=lib",
+        "-DCHANNEL_TSMF:BOOL=ON",
+        "-DCHANNEL_URBDRC:BOOL=ON",
+        "-DBUILD_TESTING:BOOL=OFF",
+        "-DWITH_MANPAGES:BOOL=OFF",
+        "-DWITH_GSSAPI:BOOL=OFF",
+        "-DWITH_PCSC:BOOL=ON",
+        "-DWITH_SERVER:BOOL=ON",
+        "-DWITH_SAMPLE:BOOL=ON",
+        "-DWITH_CUPS:BOOL=ON",
+        "-DWITH_FFMPEG:BOOL=ON",
+        "-DWITH_DSP_FFMPEG:BOOL=ON",
+        "-DWITH_OSS:BOOL=OFF",
+        "-DWITH_PULSE:BOOL=ON"
+        ],
+        "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/FreeRDP/FreeRDP.git",
+            "branch": "master"
+        }
+        ]
+    }
+    ]
+}

@@ -1,0 +1,15 @@
+prefix=/usr/local
+exec_prefix=/usr/local
+libdir=/usr/local/lib
+includedir=${prefix}/
+libs=-lwinpr-tools3
+
+Name: WinPR
+Description: WinPR: Windows Portable Runtime
+URL: http://www.freerdp.com/
+Version: 3.0.0
+Requires:
+Requires.private: winpr3 libssl
+Libs: -L${libdir} ${libs}
+Libs.private: -lcrypto
+Cflags: -I${includedir}

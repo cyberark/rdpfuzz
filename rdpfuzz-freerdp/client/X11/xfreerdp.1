@@ -1,0 +1,989 @@
+'\" t
+.\"     Title: xfreerdp
+.\"    Author: 
+.\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
+.\"      Date: 2021-01-18
+.\"    Manual: xfreerdp
+.\"    Source: freerdp
+.\"  Language: English
+.\"
+.TH "XFREERDP" "1" "2021\-01\-18" "freerdp" "xfreerdp"
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/507673
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+xfreerdp \- FreeRDP X11 client
+.SH "SYNOPSIS"
+.PP
+\fBxfreerdp\fR
+[file] [options] [/v:server[:port]]
+.SH "DESCRIPTION"
+.PP
+\fBxfreerdp\fR
+is an X11 Remote Desktop Protocol (RDP) client which is part of the FreeRDP project\&. An RDP server is built\-in to many editions of Windows\&. Alternative servers included xrdp and VRDP (VirtualBox)\&.
+.SH "OPTIONS"
+.PP
+\fB/a\fR:\fIaddin\fR[,\fIoptions\fR], \fB/addin\fR:\fIaddin\fR[,\fIoptions\fR]
+.RS 4
+Addin
+.RE
+.PP
+\fB/action\-script\fR:\fIfile\-name\fR
+.RS 4
+Action script (default:~/\&.config/freerdp/action\&.sh)
+.RE
+.PP
+\fB/admin\fR, \fB/console\fR
+.RS 4
+Admin (or console) session
+.RE
+.PP
+\fB+aero\fR
+.RS 4
+desktop composition (default:off)
+.RE
+.PP
+\fB/app\fR:\fIpath\fR or ||\fIalias\fR
+.RS 4
+Remote application program
+.RE
+.PP
+\fB/app\-cmd\fR:\fIparameters\fR
+.RS 4
+Remote application command\-line parameters
+.RE
+.PP
+\fB/app\-file\fR:\fIfile\-name\fR
+.RS 4
+File to open with remote application
+.RE
+.PP
+\fB/app\-guid\fR:\fIapp\-guid\fR
+.RS 4
+Remote application GUID
+.RE
+.PP
+\fB/app\-icon\fR:\fIicon\-path\fR
+.RS 4
+Remote application icon for user interface
+.RE
+.PP
+\fB/app\-name\fR:\fIapp\-name\fR
+.RS 4
+Remote application name for user interface
+.RE
+.PP
+\fB/app\-workdir\fR:\fIworkspace path\fR
+.RS 4
+Remote application workspace path
+.RE
+.PP
+\fB/assistance\fR:\fIpassword\fR
+.RS 4
+Remote assistance password
+.RE
+.PP
+\fB/auto\-request\-control\fR:
+.RS 4
+Automatically request remote assistance input control
+.RE
+.PP
+\fB+async\-channels\fR
+.RS 4
+Asynchronous channels (experimental) (default:off)
+.RE
+.PP
+\fB+async\-input\fR
+.RS 4
+Asynchronous input (default:off)
+.RE
+.PP
+\fB+async\-update\fR
+.RS 4
+Asynchronous update (default:off)
+.RE
+.PP
+\fB/audio\-mode\fR:\fImode\fR
+.RS 4
+Audio output mode
+.RE
+.PP
+\fB+auth\-only\fR
+.RS 4
+Authenticate only (default:off)
+.RE
+.PP
+\fB\-authentication\fR
+.RS 4
+Authentication (expermiental) (default:on)
+.RE
+.PP
+\fB+auto\-reconnect\fR
+.RS 4
+Automatic reconnection (default:off)
+.RE
+.PP
+\fB/auto\-reconnect\-max\-retries\fR:\fIretries\fR
+.RS 4
+Automatic reconnection maximum retries, 0 for unlimited [0,1000]
+.RE
+.PP
+\fB+bitmap\-cache\fR
+.RS 4
+bitmap cache (default:off)
+.RE
+.PP
+\fB/bpp\fR:\fIdepth\fR
+.RS 4
+Session bpp (color depth) (default:16)
+.RE
+.PP
+\fB/buildconfig\fR
+.RS 4
+Print the build configuration
+.RE
+.PP
+\fB/cert\fR:[deny,ignore,name:\fIname\fR,tofu,fingerprint:\fIhash\fR:\fIhash as hex\fR[,fingerprint:\fIhash\fR:\fIanother hash\fR]]
+.RS 4
+Certificate accept options\&. Use with care! * deny \&.\&.\&. Automatically abort connection if the certificate does not match, no user interaction\&. * ignore \&.\&.\&. Ignore the certificate checks altogether (overrules all other options) * name \&.\&.\&. Use the alternate <name> instead of the certificate subject to match locally stored certificates * tofu \&.\&.\&. Accept certificate unconditionally on first connect and deny on subsequent connections if the certificate does not match * fingerprints \&.\&.\&. A list of certificate hashes that are accepted unconditionally for a connection
+.RE
+.PP
+\fB/cert\-deny\fR
+.RS 4
+[deprecated, use /cert:deny] Automatically abort connection for any certificate that can not be validated\&.
+.RE
+.PP
+\fB/cert\-ignore\fR
+.RS 4
+[deprecated, use /cert:ignore] Ignore certificate
+.RE
+.PP
+\fB/cert\-name\fR:\fIname\fR
+.RS 4
+[deprecated, use /cert:name:<name>] Certificate name
+.RE
+.PP
+\fB/cert\-tofu\fR
+.RS 4
+[deprecated, use /cert:tofu] Automatically accept certificate on first connect
+.RE
+.PP
+\fB/client\-build\-number\fR:\fInumber\fR
+.RS 4
+Client Build Number sent to server (influences smartcard behaviour, see [MS\-RDPESC])
+.RE
+.PP
+\fB/client\-hostname\fR:\fIname\fR
+.RS 4
+Client Hostname to send to server
+.RE
+.PP
+\fB\-clipboard\fR
+.RS 4
+Redirect clipboard (default:on)
+.RE
+.PP
+\fB/codec\-cache\fR:[rfx|nsc|jpeg]
+.RS 4
+Bitmap codec cache
+.RE
+.PP
+\fB\-compression\fR, \fB\-z\fR
+.RS 4
+compression (default:on)
+.RE
+.PP
+\fB/compression\-level\fR:\fIlevel\fR
+.RS 4
+Compression level (0,1,2)
+.RE
+.PP
+\fB+credentials\-delegation\fR
+.RS 4
+credentials delegation (default:off)
+.RE
+.PP
+\fB/d\fR:\fIdomain\fR
+.RS 4
+Domain
+.RE
+.PP
+\fB\-decorations\fR
+.RS 4
+Window decorations (default:on)
+.RE
+.PP
+\fB/disp\fR
+.RS 4
+Display control
+.RE
+.PP
+\fB/drive\fR:\fIname\fR,\fIpath\fR
+.RS 4
+Redirect directory <path> as named share <name>\&. Hotplug support is enabled with /drive:hotplug,*\&. This argument provides the same function as "Drives that I plug in later" option in MSTSC\&.
+.RE
+.PP
+\fB+drives\fR
+.RS 4
+Redirect all mount points as shares (default:off)
+.RE
+.PP
+\fB/dvc\fR:\fIchannel\fR[,\fIoptions\fR]
+.RS 4
+Dynamic virtual channel
+.RE
+.PP
+\fB/dynamic\-resolution\fR
+.RS 4
+Send resolution updates when the window is resized
+.RE
+.PP
+\fB/echo\fR, \fB/echo\fR
+.RS 4
+Echo channel
+.RE
+.PP
+\fB/generic\fR, \fB/generic\fR
+.RS 4
+Generic channel
+.RE
+.PP
+\fB\-encryption\fR
+.RS 4
+Encryption (experimental) (default:on)
+.RE
+.PP
+\fB/encryption\-methods\fR:[40,][56,][128,][FIPS]
+.RS 4
+RDP standard security encryption methods
+.RE
+.PP
+\fB/f\fR
+.RS 4
+Fullscreen mode (<Ctrl>+<Alt>+<Enter> toggles fullscreen)
+.RE
+.PP
+\fB\-fast\-path\fR
+.RS 4
+fast\-path input/output (default:on)
+.RE
+.PP
+\fB+fipsmode\fR
+.RS 4
+FIPS mode (default:off)
+.RE
+.PP
+\fB/floatbar\fR[:sticky:[on|off],default:[visible|hidden],show:[always|fullscreen||window]]
+.RS 4
+floatbar is disabled by default (when enabled defaults to sticky in fullscreen mode)
+.RE
+.PP
+\fB\-fonts\fR
+.RS 4
+smooth fonts (ClearType) (default:on)
+.RE
+.PP
+\fB/frame\-ack\fR:\fInumber\fR
+.RS 4
+Number of frame acknowledgement
+.RE
+.PP
+\fB/from\-stdin\fR[:force]
+.RS 4
+Read credentials from stdin\&. With <force> the prompt is done before connection, otherwise on server request\&.
+.RE
+.PP
+\fB/g\fR:\fIgateway\fR[:\fIport\fR]
+.RS 4
+Gateway Hostname
+.RE
+.PP
+\fB/gateway\-usage\-method\fR:[direct|detect], \fB/gum\fR:[direct|detect]
+.RS 4
+Gateway usage method
+.RE
+.PP
+\fB/gd\fR:\fIdomain\fR
+.RS 4
+Gateway domain
+.RE
+.PP
+\fB/gdi\fR:sw|hw
+.RS 4
+GDI rendering
+.RE
+.PP
+\fB/geometry\fR
+.RS 4
+Geometry tracking channel
+.RE
+.PP
+\fB+gestures\fR
+.RS 4
+Consume multitouch input locally (default:off)
+.RE
+.PP
+\fB/gfx\fR[:RFX]
+.RS 4
+RDP8 graphics pipeline
+.RE
+.PP
+\fB+gfx\-progressive\fR
+.RS 4
+RDP8 graphics pipeline using progressive codec (default:off)
+.RE
+.PP
+\fB+gfx\-small\-cache\fR
+.RS 4
+RDP8 graphics pipeline using small cache mode (default:off)
+.RE
+.PP
+\fB+gfx\-thin\-client\fR
+.RS 4
+RDP8 graphics pipeline using thin client mode (default:off)
+.RE
+.PP
+\fB+glyph\-cache\fR
+.RS 4
+Glyph cache (experimental) (default:off)
+.RE
+.PP
+\fB/gp\fR:\fIpassword\fR
+.RS 4
+Gateway password
+.RE
+.PP
+\fB\-grab\-keyboard\fR
+.RS 4
+Grab keyboard (default:on)
+.RE
+.PP
+\fB/gt\fR:[rpc|http|auto]
+.RS 4
+Gateway transport type
+.RE
+.PP
+\fB/gu\fR:[[\fIdomain\fR\e]\fIuser\fR|\fIuser\fR[@\fIdomain\fR]]
+.RS 4
+Gateway username
+.RE
+.PP
+\fB/gat\fR:\fIaccess token\fR
+.RS 4
+Gateway Access Token
+.RE
+.PP
+\fB/h\fR:\fIheight\fR
+.RS 4
+Height (default:768)
+.RE
+.PP
+\fB\-heartbeat\fR
+.RS 4
+Support heartbeat PDUs (default:on)
+.RE
+.PP
+\fB/help\fR, \fB/?\fR
+.RS 4
+Print help
+.RE
+.PP
+\fB+home\-drive\fR
+.RS 4
+Redirect user home as share (default:off)
+.RE
+.PP
+\fB/ipv6\fR, \fB/6\fR
+.RS 4
+Prefer IPv6 AAA record over IPv4 A record
+.RE
+.PP
+\fB/kbd\fR:0x\fIid\fR or \fIname\fR
+.RS 4
+Keyboard layout
+.RE
+.PP
+\fB/kbd\-lang\fR:0x\fIid\fR
+.RS 4
+Keyboard active language identifier
+.RE
+.PP
+\fB/kbd\-fn\-key\fR:\fIvalue\fR
+.RS 4
+Function key value
+.RE
+.PP
+\fB/kbd\-list\fR
+.RS 4
+List keyboard layouts
+.RE
+.PP
+\fB/kbd\-lang\-list\fR
+.RS 4
+List keyboard languages
+.RE
+.PP
+\fB/kbd\-subtype\fR:\fIid\fR
+.RS 4
+Keyboard subtype
+.RE
+.PP
+\fB/kbd\-type\fR:\fIid\fR
+.RS 4
+Keyboard type
+.RE
+.PP
+\fB/load\-balance\-info\fR:\fIinfo\-string\fR
+.RS 4
+Load balance info
+.RE
+.PP
+\fB/log\-filters\fR:\fItag\fR:\fIlevel\fR[,\fItag\fR:\fIlevel\fR[,\&.\&.\&.]]
+.RS 4
+Set logger filters, see wLog(7) for details
+.RE
+.PP
+\fB/log\-level\fR:[OFF|FATAL|ERROR|WARN|INFO|DEBUG|TRACE]
+.RS 4
+Set the default log level, see wLog(7) for details
+.RE
+.PP
+\fB/max\-fast\-path\-size\fR:\fIsize\fR
+.RS 4
+Specify maximum fast\-path update size
+.RE
+.PP
+\fB/max\-loop\-time\fR:\fItime\fR
+.RS 4
+Specify maximum time in milliseconds spend treating packets
+.RE
+.PP
+\fB+menu\-anims\fR
+.RS 4
+menu animations (default:off)
+.RE
+.PP
+\fB/microphone\fR[:[sys:\fIsys\fR,][dev:\fIdev\fR,][format:\fIformat\fR,][rate:\fIrate\fR,][channel:\fIchannel\fR]], \fB/mic\fR[:[sys:\fIsys\fR,][dev:\fIdev\fR,][format:\fIformat\fR,][rate:\fIrate\fR,][channel:\fIchannel\fR]]
+.RS 4
+Audio input (microphone)
+.RE
+.PP
+\fB/monitor\-list\fR
+.RS 4
+List detected monitors
+.RE
+.PP
+\fB/monitors\fR:\fIid\fR[,\fIid\fR[,\&.\&.\&.]]
+.RS 4
+Select monitors to use
+.RE
+.PP
+\fB\-mouse\-motion\fR
+.RS 4
+Send mouse motion (default:on)
+.RE
+.PP
+\fB/multimon\fR[:force]
+.RS 4
+Use multiple monitors
+.RE
+.PP
+\fB+multitouch\fR
+.RS 4
+Redirect multitouch input (default:off)
+.RE
+.PP
+\fB+multitransport\fR
+.RS 4
+Support multitransport protocol (default:off)
+.RE
+.PP
+\fB\-nego\fR
+.RS 4
+protocol security negotiation (default:on)
+.RE
+.PP
+\fB/network\fR:[modem|broadband|broadband\-low|broadband\-high|wan|lan|auto]
+.RS 4
+Network connection type
+.RE
+.PP
+\fB/nsc\fR, \fB/nscodec\fR
+.RS 4
+NSCodec support
+.RE
+.PP
+\fB+offscreen\-cache\fR
+.RS 4
+offscreen bitmap cache (default:off)
+.RE
+.PP
+\fB/orientation\fR:[0|90|180|270]
+.RS 4
+Orientation of display in degrees
+.RE
+.PP
+\fB+old\-license\fR
+.RS 4
+Use the old license workflow (no CAL and hwId set to 0) (default:off)
+.RE
+.PP
+\fB/p\fR:\fIpassword\fR
+.RS 4
+Password
+.RE
+.PP
+\fB/parallel\fR[:\fIname\fR[,\fIpath\fR]]
+.RS 4
+Redirect parallel device
+.RE
+.PP
+\fB/parent\-window\fR:\fIwindow\-id\fR
+.RS 4
+Parent window id
+.RE
+.PP
+\fB+password\-is\-pin\fR
+.RS 4
+Use smart card authentication with password as smart card PIN (default:off)
+.RE
+.PP
+\fB/pcb\fR:\fIblob\fR
+.RS 4
+Preconnection Blob
+.RE
+.PP
+\fB/pcid\fR:\fIid\fR
+.RS 4
+Preconnection Id
+.RE
+.PP
+\fB/pheight\fR:\fIheight\fR
+.RS 4
+Physical height of display (in millimeters)
+.RE
+.PP
+\fB/play\-rfx\fR:\fIpcap\-file\fR
+.RS 4
+Replay rfx pcap file
+.RE
+.PP
+\fB/port\fR:\fInumber\fR
+.RS 4
+Server port
+.RE
+.PP
+\fB\-suppress\-output\fR
+.RS 4
+suppress output when minimized (default:on)
+.RE
+.PP
+\fB+print\-reconnect\-cookie\fR
+.RS 4
+Print base64 reconnect cookie after connecting (default:off)
+.RE
+.PP
+\fB/printer\fR[:\fIname\fR[,\fIdriver\fR]]
+.RS 4
+Redirect printer device
+.RE
+.PP
+\fB/proxy\fR:[\fIproto\fR://][\fIuser\fR:\fIpassword\fR@]\fIhost\fR:\fIport\fR
+.RS 4
+Proxy settings: override env\&. var (see also environment variable below)\&. Protocol "socks5" should be given explicitly where "http" is default\&.
+.RE
+.PP
+\fB/pth\fR:\fIpassword\-hash\fR, \fB/pass\-the\-hash\fR:\fIpassword\-hash\fR
+.RS 4
+Pass the hash (restricted admin mode)
+.RE
+.PP
+\fB/pwidth\fR:\fIwidth\fR
+.RS 4
+Physical width of display (in millimeters)
+.RE
+.PP
+\fB/rdp2tcp\fR:\fIexecutable path[:arg\&.\&.\&.]\fR
+.RS 4
+TCP redirection
+.RE
+.PP
+\fB/reconnect\-cookie\fR:\fIbase64\-cookie\fR
+.RS 4
+Pass base64 reconnect cookie to the connection
+.RE
+.PP
+\fB/redirect\-prefer\fR:\fIFQDN|IP|NETBIOS\fR,[\&.\&.\&.]
+.RS 4
+Override the preferred redirection order
+.RE
+.PP
+\fB/relax\-order\-checks\fR, \fB/relax\-order\-checks\fR
+.RS 4
+Do not check if a RDP order was announced during capability exchange, only use when connecting to a buggy server
+.RE
+.PP
+\fB/restricted\-admin\fR, \fB/restrictedAdmin\fR
+.RS 4
+Restricted admin mode
+.RE
+.PP
+\fB/rfx\fR
+.RS 4
+RemoteFX
+.RE
+.PP
+\fB/rfx\-mode\fR:[image|video]
+.RS 4
+RemoteFX mode
+.RE
+.PP
+\fB/scale\fR:[100|140|180]
+.RS 4
+Scaling factor of the display (default:100)
+.RE
+.PP
+\fB/scale\-desktop\fR:\fIpercentage\fR
+.RS 4
+Scaling factor for desktop applications (value between 100 and 500) (default:100)
+.RE
+.PP
+\fB/scale\-device\fR:100|140|180
+.RS 4
+Scaling factor for app store applications (default:100)
+.RE
+.PP
+\fB/sec\fR:[rdp|tls|nla|ext]
+.RS 4
+Force specific protocol security
+.RE
+.PP
+\fB+sec\-ext\fR
+.RS 4
+NLA extended protocol security (default:off)
+.RE
+.PP
+\fB\-sec\-nla\fR
+.RS 4
+NLA protocol security (default:on)
+.RE
+.PP
+\fB\-sec\-rdp\fR
+.RS 4
+RDP protocol security (default:on)
+.RE
+.PP
+\fB\-sec\-tls\fR
+.RS 4
+TLS protocol security (default:on)
+.RE
+.PP
+\fB/serial\fR[:\fIname\fR[,\fIpath\fR[,\fIdriver\fR[,permissive]]]], \fB/tty\fR[:\fIname\fR[,\fIpath\fR[,\fIdriver\fR[,permissive]]]]
+.RS 4
+Redirect serial device
+.RE
+.PP
+\fB/shell\fR:\fIshell\fR
+.RS 4
+Alternate shell
+.RE
+.PP
+\fB/shell\-dir\fR:\fIdir\fR
+.RS 4
+Shell working directory
+.RE
+.PP
+\fB/size\fR:\fIwidth\fRx\fIheight\fR or \fIpercent\fR%[wh]
+.RS 4
+Screen size (default:1024x768)
+.RE
+.PP
+\fB/smart\-sizing\fR[:\fIwidth\fRx\fIheight\fR]
+.RS 4
+Scale remote desktop to window size
+.RE
+.PP
+\fB/smartcard\fR[:\fIstr\fR[,\fIstr\fR\&.\&.\&.]]
+.RS 4
+Redirect the smartcard devices containing any of the <str> in their names\&.
+.RE
+.PP
+\fB/smartcard\-logon\fR
+.RS 4
+Activates Smartcard Logon authentication\&. (EXPERIMENTAL: NLA not supported)
+.RE
+.PP
+\fB/sound\fR[:[sys:\fIsys\fR,][dev:\fIdev\fR,][format:\fIformat\fR,][rate:\fIrate\fR,][channel:\fIchannel\fR,][latency:\fIlatency\fR,][quality:\fIquality\fR]], \fB/audio\fR[:[sys:\fIsys\fR,][dev:\fIdev\fR,][format:\fIformat\fR,][rate:\fIrate\fR,][channel:\fIchannel\fR,][latency:\fIlatency\fR,][quality:\fIquality\fR]]
+.RS 4
+Audio output (sound)
+.RE
+.PP
+\fB/span\fR
+.RS 4
+Span screen over multiple monitors
+.RE
+.PP
+\fB/spn\-class\fR:\fIservice\-class\fR
+.RS 4
+SPN authentication service class
+.RE
+.PP
+\fB/ssh\-agent\fR, \fB/ssh\-agent\fR
+.RS 4
+SSH Agent forwarding channel
+.RE
+.PP
+\fB/t\fR:\fItitle\fR, \fB/title\fR:\fItitle\fR
+.RS 4
+Window title
+.RE
+.PP
+\fB\-themes\fR
+.RS 4
+themes (default:on)
+.RE
+.PP
+\fB/timeout\fR:\fItime in ms\fR, \fB/timeout\fR:\fItime in ms\fR
+.RS 4
+Advanced setting for high latency links: Adjust connection timeout, use if you encounter timeout failures with your connection (default:9000)
+.RE
+.PP
+\fB/tls\-ciphers\fR:[netmon|ma|ciphers]
+.RS 4
+Allowed TLS ciphers
+.RE
+.PP
+\fB/tls\-seclevel\fR:\fIlevel\fR
+.RS 4
+TLS security level \- defaults to 1 (default:1)
+.RE
+.PP
+\fB\-toggle\-fullscreen\fR
+.RS 4
+Alt+Ctrl+Enter to toggle fullscreen (default:on)
+.RE
+.PP
+\fB/tune\fR:\fIsetting:value\fR,\fIsetting:value\fR
+.RS 4
+[experimental] directly manipulate freerdp settings, use with extreme caution! (default:)
+.RE
+.PP
+\fB/tune\-list\fR
+.RS 4
+Print options allowed for /tune
+.RE
+.PP
+\fB/u\fR:[[\fIdomain\fR\e]\fIuser\fR|\fIuser\fR[@\fIdomain\fR]]
+.RS 4
+Username
+.RE
+.PP
+\fB+unmap\-buttons\fR
+.RS 4
+Let server see real physical pointer button (default:off)
+.RE
+.PP
+\fB/v\fR:\fIserver\fR[:port]
+.RS 4
+Server hostname
+.RE
+.PP
+\fB/vc\fR:\fIchannel\fR[,\fIoptions\fR]
+.RS 4
+Static virtual channel
+.RE
+.PP
+\fB/version\fR
+.RS 4
+Print version
+.RE
+.PP
+\fB/video\fR
+.RS 4
+Video optimized remoting channel
+.RE
+.PP
+\fB/vmconnect\fR[:\fIvmid\fR]
+.RS 4
+Hyper\-V console (use port 2179, disable negotiation)
+.RE
+.PP
+\fB/w\fR:\fIwidth\fR
+.RS 4
+Width (default:1024)
+.RE
+.PP
+\fB\-wallpaper\fR
+.RS 4
+wallpaper (default:on)
+.RE
+.PP
+\fB+window\-drag\fR
+.RS 4
+full window drag (default:off)
+.RE
+.PP
+\fB/window\-position\fR:\fIxpos\fRx\fIypos\fR
+.RS 4
+window position
+.RE
+.PP
+\fB/wm\-class\fR:\fIclass\-name\fR
+.RS 4
+Set the WM_CLASS hint for the window instance
+.RE
+.PP
+\fB/workarea\fR
+.RS 4
+Use available work area
+.RE
+.SH "ENVIRONMENT VARIABLES"
+.PP
+wlog environment variable
+.RS 4
+xfreerdp uses wLog as its log facility, you can refer to the corresponding man page (wlog(7)) for more informations\&. Arguments passed via the
+\fI/log\-level\fR
+or
+\fI/log\-filters\fR
+have precedence over the environment variables\&.
+.RE
+.SH "EXAMPLES"
+.PP
+\fBxfreerdp connection\&.rdp /p:Pwd123! /f\fR
+.RS 4
+Connect in fullscreen mode using a stored configuration
+\fIconnection\&.rdp\fR
+and the password
+\fIPwd123!\fR
+.RE
+.PP
+\fBxfreerdp /u:USER /size:50%h /v:rdp\&.contoso\&.com\fR
+.RS 4
+Connect to host
+\fIrdp\&.contoso\&.com\fR
+with user
+\fIUSER\fR
+and a size of
+\fI50 percent of the height\fR\&. If width (w) is set instead of height (h) like /size:50%w\&. 50 percent of the width is used\&.
+.RE
+.PP
+\fBxfreerdp /u:CONTOSO\e\eJohnDoe /p:Pwd123! /v:rdp\&.contoso\&.com\fR
+.RS 4
+Connect to host
+\fIrdp\&.contoso\&.com\fR
+with user
+\fICONTOSO\e\eJohnDoe\fR
+and password
+\fIPwd123!\fR
+.RE
+.PP
+\fBxfreerdp /u:JohnDoe /p:Pwd123! /w:1366 /h:768 /v:192\&.168\&.1\&.100:4489\fR
+.RS 4
+Connect to host
+\fI192\&.168\&.1\&.100\fR
+on port
+\fI4489\fR
+with user
+\fIJohnDoe\fR, password
+\fIPwd123!\fR\&. The screen width is set to
+\fI1366\fR
+and the height to
+\fI768\fR
+.RE
+.PP
+\fBxfreerdp /u:JohnDoe /p:Pwd123! /vmconnect:C824F53E\-95D2\-46C6\-9A18\-23A5BB403532 /v:192\&.168\&.1\&.100\fR
+.RS 4
+Establish a connection to host
+\fI192\&.168\&.1\&.100\fR
+with user
+\fIJohnDoe\fR, password
+\fIPwd123!\fR
+and connect to Hyper\-V console (use port 2179, disable negotiation) with VMID
+\fIC824F53E\-95D2\-46C6\-9A18\-23A5BB403532\fR
+.RE
+.PP
+\fB+clipboard\fR
+.RS 4
+Activate clipboard redirection
+.RE
+.PP
+\fB/drive:home,/home/user\fR
+.RS 4
+Activate drive redirection of
+\fI/home/user\fR
+as home drive
+.RE
+.PP
+\fB/smartcard:<device>\fR
+.RS 4
+Activate smartcard redirection for device
+\fIdevice\fR
+.RE
+.PP
+\fB/printer:<device>,<driver>\fR
+.RS 4
+Activate printer redirection for printer
+\fIdevice\fR
+using driver
+\fIdriver\fR
+.RE
+.PP
+\fB/serial:<device>\fR
+.RS 4
+Activate serial port redirection for port
+\fIdevice\fR
+.RE
+.PP
+\fB/parallel:<device>\fR
+.RS 4
+Activate parallel port redirection for port
+\fIdevice\fR
+.RE
+.PP
+\fB/sound:sys:alsa\fR
+.RS 4
+Activate audio output redirection using device
+\fIsys:alsa\fR
+.RE
+.PP
+\fB/microphone:sys:alsa\fR
+.RS 4
+Activate audio input redirection using device
+\fIsys:alsa\fR
+.RE
+.PP
+\fB/multimedia:sys:alsa\fR
+.RS 4
+Activate multimedia redirection using device
+\fIsys:alsa\fR
+.RE
+.PP
+\fB/usb:id,dev:054c:0268\fR
+.RS 4
+Activate USB device redirection for the device identified by
+\fI054c:0268\fR
+.RE
+.SH "LINKS"
+.PP
+\m[blue]\fBhttp://www\&.freerdp\&.com/\fR\m[]
+.SH "AUTHOR"
+.br
+.PP
+The FreeRDP Team
+

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+SERVICE="xfreerdp"
+while true
+do
+    sleep 1
+    if pgrep -x "$SERVICE" >/dev/null
+    then
+        echo "."
+    else
+        ./client/X11/xfreerdp /v:10.0.6.209 -sec-nla /cert:ignore +multitouch /echo /u:fuzz01 /p:RDPFuzz12345
+    fi
+done

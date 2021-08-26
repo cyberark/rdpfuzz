@@ -1,0 +1,274 @@
+﻿/* 8 bit color selection */
+"256 Colors" = "256 Colors";
+
+/* '3G Performance': Bookmark 3G Performance Settings */
+"3G Performance" = "3G Performance";
+
+/* '3G Screen': Bookmark 3G Screen settings */
+"3G Screen" = "3G Screen";
+
+/* '3G Settings': Bookmark enable 3G settings */
+"3G Settings" = "3G Settings";
+
+/* About Controller title
+   Tabbar item about */
+"About" = "About";
+
+/* Accept All Certificates setting */
+"Accept all Certificates" = "Accept all Certificates";
+
+/* 'Add Bookmark': button label
+   Add Bookmark title */
+"Add Bookmark" = "Add Bookmark";
+
+/* 'Advanced': advanced settings header
+   'Advanced': Bookmark Advanced Settings */
+"Advanced" = "Advanced";
+
+/* Advanced Settings title */
+"Advanced Settings" = "Advanced Settings";
+
+/* Automatic protocl security selection
+   Screen resolution selector: Automatic resolution (full screen on iPad, reasonable size on iPhone) */
+"Automatic" = "Automatic";
+
+/* Bookmark data validation: label blank title. */
+"Bookmark labels cannot be blank" = "Bookmark labels cannot be blank";
+
+/* 'Bookmarks': controller title */
+"Bookmarks" = "Bookmarks";
+
+/* Cancel Button */
+"Cancel" = "Cancel";
+
+/* Incomplete bookmark error title */
+"Cancel without saving?" = "Cancel without saving?";
+
+/* TSX Connect error bookmark offline */
+"Cannot connect to TSX Connect bookmark because it is currently offline!" = "Cannot connect to TSX Connect bookmark because it is currently offline!";
+
+/* Clear Certificate cache success message */
+"Certificate Cache cleared!" = "Certificate Cache cleared!";
+
+/* Connecting progress view - label */
+"Connecting" = "Connecting";
+
+/* 'Console Mode': Bookmark console mode settings */
+"Console Mode" = "Console Mode";
+
+/* Continue Button */
+"Continue" = "Continue";
+
+/* 'Credentials': Bookmark credentials
+   'Credentials': credentials settings header
+   Credentials title */
+"Credentials" = "Credentials";
+
+/* Screen resolution selector: Custom */
+"Custom" = "Custom";
+
+/* Desktop background performance setting */
+"Desktop Background" = "Desktop Background";
+
+/* Desktop composition performance setting */
+"Desktop Composition" = "Desktop Composition";
+
+/* 'Domain': Bookmark domain
+   Credentials Input Domain hint */
+"Domain" = "Domain";
+
+/* Button title 'Done' */
+"Done" = "Done";
+
+/* Edit Bookmark title */
+"Edit Bookmark" = "Edit Bookmark";
+
+/* Erase certificate cache button */
+"Erase Certificate Cache" = "Erase Certificate Cache";
+
+/* Clear Certificate cache failed message */
+"Error clearing the Certificate Cache!" = "Could not clear the certificate cache!";
+
+/* External Link Alert Title */
+"External Link" = "External Link";
+
+/* Failed to connect error message */
+"Failed to connect to session!" = "Could not connect connect to session.";
+
+/* Font smoothing performance setting */
+"Font Smoothing" = "Font Smoothing";
+
+/* Custom Screen Height */
+"Height" = "Height";
+
+/* Help Controller title
+   Tabbar item help */
+"Help" = "Help";
+
+/* Button title 'Hide' */
+"Hide" = "Hide";
+
+/* Show/Hide Phone Status Bar setting */
+"Hide Status Bar" = "Hide Status Bar";
+
+/* 15 bit color selection */
+"High Color (15 Bit)" = "High Color (15 Bit)";
+
+/* 16 bit color selection */
+"High Color (16 Bit)" = "High Color (16 Bit)";
+
+/* 32 bit color selection */
+"Highest Quality (32 Bit)" = "Highest Quality (32 Bit)";
+
+/* 'Host': Bookmark hostname
+   'Host': host settings header */
+"Host" = "Host";
+
+/* Invert Scrolling UI setting */
+"Invert Scrolling" = "Invert Scrolling";
+
+/* Verify certificate view issuer label */
+"Issuer:" = "Issuer:";
+
+/* 'Label': Bookmark label */
+"Label" = "Label";
+
+/* Login Button
+   TSX Connect login button */
+"Login" = "Login";
+
+/* TSX Connect logout button */
+"Logout" = "Logout";
+
+/* Menu Animations performance setting */
+"Menu Animation" = "Menu Animation";
+
+/* 'My Computers': section manual bookmarks header */
+"My Computers" = "My Computers";
+
+/* 'My Session': section sessions header */
+"My Sessions" = "My Sessions";
+
+/* No Button */
+"No" = "No";
+
+/* TSXConnect Offline */
+"Offline" = "Offline";
+
+/* OK Button */
+"OK" = "OK";
+
+/* TSXConnect Online */
+"Online" = "Online";
+
+/* Open link in browser (with link as parameter) */
+"Open [%@] in Browser?" = "Open [%@] in Browser?";
+
+/* 'Password': Bookmark password
+   Credentials Input Password hint
+   TSX Connect Password setting */
+"Password" = "Password";
+
+/* TSX Connect password placeholder */
+"password" = "password";
+
+/* 'Performance': Bookmark Performance Settings */
+"Performance" = "Performance";
+
+/* 'Performance Settings': performance settings header */
+"Performance Settings" = "Performance Settings";
+
+/* Bookmark data validation: label blank message. */
+"Please enter the short description of this bookmark that will appear in the bookmark list." = "Please enter the short description of this bookmark that will appear in the bookmark list.";
+
+/* Credentials input view message */
+"Please provide the missing user information in order to proceed and login." = "Please provide the missing user information in order to proceed and login.";
+
+/* TSXConnect description footer */
+"Please provide your Google Account data to enable TSX Connect." = "Please provide your Google Account data to enable TSX Connect.";
+
+/* 'Port': Bookmark port */
+"Port" = "Port";
+
+/* Incomplete bookmark error message */
+"Press 'Cancel' to abort!\nPress 'Continue' to specify the required fields!" = "Press 'Cancel' to abort!\nPress 'Continue' to specify the required fields!";
+
+/* 'Remote Program': Bookmark remote program settings */
+"Remote Program" = "Remote Program";
+
+/* RemoteFX performance setting */
+"RemoteFX" = "RemoteFX";
+
+/* Save connection settings title */
+"Save connection settings?" = "Save connection settings?";
+
+/* 'Screen': Bookmark Screen settings */
+"Screen" = "Screen";
+
+/* 'Security': Bookmark protocl security settings */
+"Security" = "Security";
+
+/* Server Certificate Handling section title */
+"Server Certificate Handling" = "Server Certificate Handling";
+
+/* 'Session Settings': session settings header
+   App Settings title
+   Tabbar item settings */
+"Settings" = "Settings";
+
+/* Swap Mouse Button UI setting */
+"Swap Mouse Buttons" = "Swap Mouse Buttons";
+
+/* Verify certificate view message */
+"The identity of the remote computer cannot be verified. Do you want to connect anyway?" = "The identity of the remote computer cannot be verified. Do you want to connect anyway?";
+
+/* Screen settings not supported message with width, height and colors parameter */
+"The server changed the screen settings to %dx%dx%d" = "The server changed the screen settings to %1$dx%2$dx%3$d";
+
+/* 24 bit color selection */
+"True Color (24 Bit)" = "True Color (24 Bit)";
+
+/* 'TSX Connect': section tsx connect bookmarks header */
+"TSX Connect" = "TSX Connect";
+
+/* TSX Connect Settings section title */
+"TSX Connect Settings" = "TSX Connect Settings";
+
+/* Button title 'Unhide' */
+"Unhide" = "Unhide";
+
+/* UI settings section title */
+"User Interface" = "User Interface";
+
+/* TSX Connect username placeholder */
+"user@gmail.com" = "user@gmail.com";
+
+/* 'Username': Bookmark username
+   Credentials Input Username hint
+   TSX Connect Username setting */
+"Username" = "Username";
+
+/* Use Themes performance setting */
+"Visual Styles" = "Visual Styles";
+
+/* Custom Screen Width */
+"Width" = "Width";
+
+/* Window Dragging performance setting */
+"Window contents while dragging" = "Window contents while dragging";
+
+/* 'Working Directory': Bookmark working directory settings */
+"Working Directory" = "Working Directory";
+
+/* Yes Button */
+"Yes" = "Yes";
+
+/* TSX Connect login success message */
+"You have successfully logged on to TSXConnect. In order to connect to a computer you need to install TSXConnect on that computer first!" = "You have logged on to TSXConnect. In order to connect to a computer you need to install TSXConnect on that computer first!";
+
+/* TSX Connect Incomplete params error message */
+"You have to specify your GMail Account and password in order to use TSX Connect." = "You have to specify your Gmail account and password in order to use TSX Connect.";
+
+/* Save connection settings message */
+"Your connection settings have not been saved. Do you want to save them to a new bookmark?" = "Your connection settings have not been saved. Do you want to save them to a new bookmark?";
+

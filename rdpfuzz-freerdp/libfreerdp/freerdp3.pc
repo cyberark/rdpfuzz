@@ -1,0 +1,15 @@
+prefix=/usr/local
+exec_prefix=/usr/local
+libdir=/usr/local/lib
+includedir=${prefix}/include/freerdp3/
+libs=-lfreerdp3
+
+Name: FreeRDP
+Description: FreeRDP: A Remote Desktop Protocol Implementation
+URL: http://www.freerdp.com/
+Version: 3.0.0
+Requires: 
+Requires.private: winpr3 libssl
+Libs: -L${libdir} ${libs}
+Libs.private: -ldl -lpthread
+Cflags: -I${includedir}
