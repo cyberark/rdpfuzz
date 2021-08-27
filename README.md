@@ -9,7 +9,7 @@ This project contains:
 5. Auxiliary scripts.
 
 ## Usage
-We encourage everyone to use this repository as the starting point for fuzzing complex target (client/server, windows services, etc.). 
+We encourage everyone to use this repository as the starting point for fuzzing complex target (client/server, windows services, etc.). See [Holding the Fuzzing RDP: Holding the Stick at Both Ends](https://www.cyberark.com/resources/threat-research-blog/fuzzing-rdp-holding-the-stick-at-both-ends) for more details on how to do so.
 
 However, this is not an out of the box solution, and it will not be maintained as such. Therefore we will not be accepting contributions.
 
