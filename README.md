@@ -8,7 +8,12 @@ This project contains:
 4. rdpfuzzagent - an agent enforcing protocol requirements, and sending messages over an RDP connection.
 5. Auxiliary scripts.
 
-## References:
+## Usage
+We encourage everyone to use this repository as the starting point for fuzzing complex target (client/server, windows services, etc.). 
+
+However, this is not an out of the box solution, and it will not be maintained as such. Therefore we will not be accepting contributions.
+
+## References
 For more comments, suggestions or questions, contact Or Ben-Porath ([@OrBenPorath](https://twitter.com/OrBenPorath)) and Shaked Reiner ([@ShakReiner](https://twitter.com/ShakReiner)) from CyberArk Labs.
 
 ## Certification level
