@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\d194fb3e2a9e0a1f708f1f12d0bababb\PACKAGE_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{ADA68C18-3FDF-3232-9807-77C954693C5D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

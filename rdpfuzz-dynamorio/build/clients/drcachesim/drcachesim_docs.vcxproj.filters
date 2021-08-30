@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\4afcfad43a033976873c8524f0a80e66\drcachesim.dox.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\b700cae99173fa40e214e4458a71db67\drcachesim_docs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\clients\drcachesim\CMakeFiles\drcachesim_docs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{ADA68C18-3FDF-3232-9807-77C954693C5D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

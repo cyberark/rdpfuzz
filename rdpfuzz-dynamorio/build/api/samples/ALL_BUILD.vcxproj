@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F69E0ECC-2190-31BB-8854-04DFD48EA918}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\cmake\..\include;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\..\..\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\ZERO_CHECK.vcxproj">
+      <Project>{9EF0F1F9-7D7A-3489-A926-230F66881ABF}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\bbbuf.vcxproj">
+      <Project>{33E25922-9AA7-390E-8022-A223887C473D}</Project>
+      <Name>bbbuf</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\bbcount.vcxproj">
+      <Project>{829DF35C-8E36-3924-A944-FBC9F9BD25F5}</Project>
+      <Name>bbcount</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\bbsize.vcxproj">
+      <Project>{A86C9C2B-F5F4-3923-A3B0-A72BB32467E7}</Project>
+      <Name>bbsize</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\cbr.vcxproj">
+      <Project>{09F41C19-5F12-3C74-A415-688612A2AEBA}</Project>
+      <Name>cbr</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\cbrtrace.vcxproj">
+      <Project>{D7054882-0177-3201-902C-79881EDC7FD7}</Project>
+      <Name>cbrtrace</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\countcalls.vcxproj">
+      <Project>{D54A598C-6FE8-3F89-9B4F-961AB1ED3DDE}</Project>
+      <Name>countcalls</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\div.vcxproj">
+      <Project>{F88774F2-7C5C-322E-B31B-A927FF9E1472}</Project>
+      <Name>div</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\empty.vcxproj">
+      <Project>{20B41833-07A8-3CFF-8529-ECC9FE69DDE7}</Project>
+      <Name>empty</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\hot_bbcount.vcxproj">
+      <Project>{A4118C0D-CC63-31DE-82AA-80C401FE726F}</Project>
+      <Name>hot_bbcount</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\inc2add.vcxproj">
+      <Project>{2F1AB9AF-08EF-3125-B32A-01B215A0160F}</Project>
+      <Name>inc2add</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\inline.vcxproj">
+      <Project>{36B9D7EB-EAA9-3B14-896F-8D90B53E93B4}</Project>
+      <Name>inline</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\inscount.vcxproj">
+      <Project>{C21DC0E0-8F78-33CF-9AA0-9AEBD8D246B1}</Project>
+      <Name>inscount</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\instrace_simple.vcxproj">
+      <Project>{D35571A6-9ECA-3FA9-BD51-4D6DAE8106AE}</Project>
+      <Name>instrace_simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\instrace_x86_binary.vcxproj">
+      <Project>{02B565D2-4D0D-324E-9B6C-FAF45398434F}</Project>
+      <Name>instrace_x86_binary</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\instrace_x86_text.vcxproj">
+      <Project>{8A3D7782-C150-3EB9-A211-A56689207AE5}</Project>
+      <Name>instrace_x86_text</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\instrcalls.vcxproj">
+      <Project>{9CD1427C-011C-3324-AC86-BCA8AD6DC0F0}</Project>
+      <Name>instrcalls</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\memtrace_simple.vcxproj">
+      <Project>{8E5E2A3E-C251-3138-AF1F-3112CDCBF829}</Project>
+      <Name>memtrace_simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\memtrace_x86_binary.vcxproj">
+      <Project>{CFC98544-64EB-36AF-807D-3228A4412227}</Project>
+      <Name>memtrace_x86_binary</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\memtrace_x86_text.vcxproj">
+      <Project>{743DCE37-01B1-3ECF-B05C-4D19ACBCF802}</Project>
+      <Name>memtrace_x86_text</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\memval_simple.vcxproj">
+      <Project>{80D11A6A-7C6C-3C34-8112-F0D7AA64C175}</Project>
+      <Name>memval_simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\modxfer.vcxproj">
+      <Project>{02C71CA1-0F75-3FF0-9641-EDF2AB43776D}</Project>
+      <Name>modxfer</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\modxfer_app2lib.vcxproj">
+      <Project>{CD5D05AC-3C14-3AAD-8788-31A86872259E}</Project>
+      <Name>modxfer_app2lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\opcode_count.vcxproj">
+      <Project>{C71617A6-FC26-3493-88DB-F051F811DE41}</Project>
+      <Name>opcode_count</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\opcodes.vcxproj">
+      <Project>{A3C30D5C-1588-32AC-A262-B7F11A3C2231}</Project>
+      <Name>opcodes</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\prefetch.vcxproj">
+      <Project>{219F5BB4-2277-3CA0-9CA1-2C47E8CC1606}</Project>
+      <Name>prefetch</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\signal.vcxproj">
+      <Project>{E3ABA3E2-A566-3DBE-A1F9-4062C00F8817}</Project>
+      <Name>signal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\stats.vcxproj">
+      <Project>{9B449DE9-8D3F-3CB7-86D2-D22D8DD464DA}</Project>
+      <Name>stats</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\stl_test.vcxproj">
+      <Project>{0A130B9C-ADEA-37D9-AE2D-CEABCB92892A}</Project>
+      <Name>stl_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\syscall.vcxproj">
+      <Project>{F8661D3E-4927-34AA-9D1E-7097532594CC}</Project>
+      <Name>syscall</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\tracedump.vcxproj">
+      <Project>{33A902B6-1017-3969-B4A7-B815E611BFCE}</Project>
+      <Name>tracedump</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\wrap.vcxproj">
+      <Project>{8866334A-B1CB-38A2-B4A6-C11CC7F6614F}</Project>
+      <Name>wrap</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

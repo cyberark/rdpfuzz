@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/ext/drbbdup/CMakeLists.txt
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/ext/drbbdup/drbbdup.h
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/make/policies.cmake

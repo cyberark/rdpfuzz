@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A9E81C93-5F17-3559-95F7-A40B2593F439}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\orbp\source\repos\rdpfuzz-winafl\third_party\winipt\inc;C:\Users\orbp\source\repos\rdpfuzz-winafl\third_party\processor-trace\libipt\internal\include;C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\third_party\processor-trace\libipt\include;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\..\include;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\..\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\orbp\source\repos\rdpfuzz-winafl\third_party\winipt\inc;C:\Users\orbp\source\repos\rdpfuzz-winafl\third_party\processor-trace\libipt\internal\include;C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\third_party\processor-trace\libipt\include;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\..\include;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\..\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\orbp\source\repos\rdpfuzz-winafl\third_party\winipt\inc;C:\Users\orbp\source\repos\rdpfuzz-winafl\third_party\processor-trace\libipt\internal\include;C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\third_party\processor-trace\libipt\include;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\..\include;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\..\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\orbp\source\repos\rdpfuzz-winafl\third_party\winipt\inc;C:\Users\orbp\source\repos\rdpfuzz-winafl\third_party\processor-trace\libipt\internal\include;C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\third_party\processor-trace\libipt\include;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\..\include;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\..\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\ZERO_CHECK.vcxproj">
+      <Project>{7974409C-4946-334B-BC0F-E5840A9C5811}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\afl-analyze.vcxproj">
+      <Project>{532FDB4B-7321-358D-AD66-FACA7BF5E2DA}</Project>
+      <Name>afl-analyze</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\afl-fuzz.vcxproj">
+      <Project>{6B918AD2-D508-33EA-B310-02711E0F323A}</Project>
+      <Name>afl-fuzz</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\afl-showmap.vcxproj">
+      <Project>{B20D1593-5F0E-3581-80C8-25BC87FC00AB}</Project>
+      <Name>afl-showmap</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\afl-tmin.vcxproj">
+      <Project>{B1E73204-3808-3D36-8E22-E9D794B00762}</Project>
+      <Name>afl-tmin</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\custom_net_fuzzer.vcxproj">
+      <Project>{0111A699-69D6-357D-8759-0F0357688ED6}</Project>
+      <Name>custom_net_fuzzer</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\custom_winafl_server.vcxproj">
+      <Project>{A9062A7B-32A4-3A02-A14B-6970EE65FB2D}</Project>
+      <Name>custom_winafl_server</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\third_party\processor-trace\libipt\libipt.vcxproj">
+      <Project>{AAADD8E3-05B8-3921-8BF0-F644526586D7}</Project>
+      <Name>libipt</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\test.vcxproj">
+      <Project>{B4BCF8EB-84C2-32CA-B8CF-D4C9D6FBC290}</Project>
+      <Name>test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\test_gdiplus.vcxproj">
+      <Project>{7092F8F6-7132-3143-9713-EB8B7748BF66}</Project>
+      <Name>test_gdiplus</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\test_netmode.vcxproj">
+      <Project>{0AAC77E9-7EDA-3A9C-951C-F3B5BD0B0790}</Project>
+      <Name>test_netmode</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\test_servermode.vcxproj">
+      <Project>{43F0BCA2-8743-307D-B533-2FCEA25121D4}</Project>
+      <Name>test_servermode</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\winafl.vcxproj">
+      <Project>{64D92DA8-7F82-3361-AE12-25FB8C8934CE}</Project>
+      <Name>winafl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\winaflpt-debug.vcxproj">
+      <Project>{4A730023-387D-3BB5-900C-99F8DA8C990A}</Project>
+      <Name>winaflpt-debug</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\winipt.vcxproj">
+      <Project>{8E2667A0-40FC-3B25-B5F0-31D133F754A9}</Project>
+      <Name>winipt</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3F88A5D1-3D13-3A38-AA49-1B98F4997CBB}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>generate_drwrap_asm_x86.asm</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\cmake;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\cmake\..\include;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\ext\drwrap\ext\lib64\release;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\lib;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\b07ce6538b30a30087dca461c0206074\drwrap_asm_x86.asm.obj.stamp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating drwrap_asm_x86.asm.obj.stamp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\Users\orbp\source\repos\rdpfuzz-dynamorio\ext\drwrap
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/ext/drwrap/drwrap_asm_x86.asm.obj.stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x64\cl.exe" /nologo /I C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build -DASSEMBLE_WITH_MASM -DX86_64 -DWINDOWS -DDR_HOST_X86 -DDR_HOST_X64 -I C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/cmake -E /EP drwrap_asm_x86.asm &gt; C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/ext/drwrap/drwrap_asm_x86.asm.s
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -D file=C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/ext/drwrap/drwrap_asm_x86.asm.s -P C:/Users/orbp/source/repos/rdpfuzz-dynamorio/make/CMake_asm.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\Hostx64\x64\ml64.exe" /nologo /Zi /Zd /c /Fo C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/ext/drwrap/drwrap_asm_x86.asm.obj C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/ext/drwrap/drwrap_asm_x86.asm.s
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/CMakeFiles/b07ce6538b30a30087dca461c0206074/drwrap_asm_x86.asm.obj.stamp.rule;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\ext\drwrap\drwrap_asm_x86.asm;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\make\CMake_asm.cmake;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\cmake\cpp2asm_defines.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\ext\drwrap\drwrap_asm_x86.asm.obj.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\6ca6b1174099d0faf21dc0d49c4a6ae9\generate_drwrap_asm_x86.asm.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/CMakeFiles/6ca6b1174099d0faf21dc0d49c4a6ae9/generate_drwrap_asm_x86.asm.rule;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\ext\drwrap\drwrap_asm_x86.asm.obj.stamp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\ext\drwrap\CMakeFiles\generate_drwrap_asm_x86.asm</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\ext\drwrap\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/orbp/source/repos/rdpfuzz-dynamorio/ext/drwrap/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -HC:/Users/orbp/source/repos/rdpfuzz-dynamorio -BC:/Users/orbp/source/repos/rdpfuzz-dynamorio/build --check-stamp-file C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/ext/drwrap/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/orbp/source/repos/rdpfuzz-dynamorio/ext/drwrap/CMakeLists.txt;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\ext\drwrap\CMakeLists.txt;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\ext\drwrap\drwrap.h;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\make\policies.cmake;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\ext\drwrap\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\ext\drwrap\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\ext\drwrap\CMakeFiles\generate_drwrap_asm_x86.asm" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\ZERO_CHECK.vcxproj">
+      <Project>{9EF0F1F9-7D7A-3489-A926-230F66881ABF}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

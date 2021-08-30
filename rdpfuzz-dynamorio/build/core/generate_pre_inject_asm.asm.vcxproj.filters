@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\0d224a76b3e36ae769744402f7af3056\pre_inject_asm.asm.obj.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\ebf24b32457aa01e0a2e83adf612128d\generate_pre_inject_asm.asm.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\core\CMakeFiles\generate_pre_inject_asm.asm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{ADA68C18-3FDF-3232-9807-77C954693C5D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

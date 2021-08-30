@@ -1,0 +1,7 @@
+# CMake generation dependency list for this directory.
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/core/CMakeLists.txt
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/core/lib/dr_annotations.c
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/core/lib/dr_annotations.h
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/core/lib/dr_annotations_asm.h
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/make/CMake_events.cmake
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/make/policies.cmake

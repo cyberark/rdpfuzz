@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\simulator\simulator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\simulator\cache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\simulator\cache_lru.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\simulator\cache_fifo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\simulator\cache_miss_analyzer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\simulator\caching_device.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\simulator\caching_device_stats.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\simulator\cache_stats.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\simulator\prefetcher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\simulator\cache_simulator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\simulator\snoop_filter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\simulator\tlb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\simulator\tlb_simulator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{30A5F603-2FF9-349F-8941-EFED69D3848F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

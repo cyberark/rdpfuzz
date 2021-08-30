@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\CMakeFiles\90ee5bab385d1bd9e88f36e9b1fce456\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{3FE23718-8E2A-31F1-B598-716AB41CE0C5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

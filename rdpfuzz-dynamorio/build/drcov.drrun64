@@ -1,0 +1,8 @@
+# drcov tool config file
+# DynamoRIO options
+DR_OP=-nop_initial_bblock
+# client tool path
+CLIENT64_REL=tools/lib64/release/drcov.dll
+CLIENT32_REL=tools/lib32/release/drcov.dll
+# client tool options
+TOOL_OP=

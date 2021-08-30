@@ -1,0 +1,3 @@
+# drcpusim tool config file
+CLIENT64_REL=clients/lib64/release/drcpusim.dll
+CLIENT32_REL=clients/lib32/release/drcpusim.dll

@@ -1,0 +1,3 @@
+# CMake generation dependency list for this directory.
+C:/Users/orbp/source/repos/rdpfuzz-winafl/third_party/processor-trace/libipt/CMakeLists.txt
+C:/Users/orbp/source/repos/rdpfuzz-winafl/third_party/processor-trace/libipt/include/intel-pt.h.in

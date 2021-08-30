@@ -1,0 +1,7 @@
+# CMake generation dependency list for this directory.
+C:/Program Files (x86)/Windows Kits/10/Debuggers/x64/dbghelp.dll
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/ext/drsyms/CMakeLists.txt
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/ext/drsyms/drsyms.h
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/ext/drsyms/libelftc-pecoff/lib64/dwarf.pdb
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/ext/drsyms/libelftc-pecoff/lib64/elftc.pdb
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/make/policies.cmake

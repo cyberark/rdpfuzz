@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2CA2F4DD-321D-34D2-8F50-9CB883C3D3BF}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>directory_iterator</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\clients\lib64\release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">directory_iterator.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">directory_iterator</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\cmake\..\include;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\ext\include;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\common;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\reader;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\tracer;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WINDOWS;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;WINDOWS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\cmake\..\include;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\ext\include;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\common;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\reader;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\tracer;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\cmake\..\include;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\ext\include;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\common;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\reader;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\tracer;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/orbp/source/repos/rdpfuzz-dynamorio/clients/drcachesim/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -HC:/Users/orbp/source/repos/rdpfuzz-dynamorio -BC:/Users/orbp/source/repos/rdpfuzz-dynamorio/build --check-stamp-file C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/clients/drcachesim/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/orbp/source/repos/rdpfuzz-dynamorio/clients/drcachesim/CMakeLists.txt;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\CMakeLists.txt;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\analysis_tool.h;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\analyzer.h;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\common\memref.h;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\common\trace_entry.h;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\common\utils.h;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\reader\reader.h;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\simulator\cache_simulator.h;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\simulator\cache_simulator_create.h;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\simulator\tlb_simulator_create.h;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\tools\basic_counts_create.h;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\tools\func_view_create.h;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\tools\histogram_create.h;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\tools\opcode_mix_create.h;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\tools\reuse_distance_create.h;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\tools\reuse_time_create.h;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\tools\view_create.h;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\tracer\drmemtrace.h;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\tracer\raw2trace.h;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\make\policies.cmake;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\clients\drcachesim\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\common\directory_iterator.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\ZERO_CHECK.vcxproj">
+      <Project>{9EF0F1F9-7D7A-3489-A926-230F66881ABF}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api_headers.vcxproj">
+      <Project>{1B5C6675-E7F1-3A48-979F-9D3D5F600920}</Project>
+      <Name>api_headers</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\libutil\drfrontendlib.vcxproj">
+      <Project>{25F586E2-D58E-322A-B4D0-FBB4DFB163D0}</Project>
+      <Name>drfrontendlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

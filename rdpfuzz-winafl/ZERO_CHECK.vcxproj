@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8A67A50D-E300-330A-B89D-67A6F9EDEC99}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ZERO_CHECK</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\orbp\source\repos\winafl\third_party\winipt\inc;C:\Users\orbp\source\repos\winafl\third_party\processor-trace\libipt\internal\include;C:\Users\orbp\source\repos\winafl\third_party\processor-trace\libipt\include;C:\Users\orbp\source\repos\winafl\DynamoRIO-Windows-7.1.0-1\cmake\..\include;C:\Users\orbp\source\repos\winafl\DynamoRIO-Windows-7.1.0-1\cmake\..\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\orbp\source\repos\winafl\CMakeFiles\a262b75078b06a71dfcae2b0f2f7d179\generate.stamp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/orbp/source/repos/winafl -BC:/Users/orbp/source/repos/winafl --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/orbp/source/repos/winafl/WinAFL.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindCygwin.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindUnixCommands.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;C:\Users\orbp\source\repos\winafl\CMakeFiles\3.16.0\CMakeCCompiler.cmake;C:\Users\orbp\source\repos\winafl\CMakeFiles\3.16.0\CMakeCXXCompiler.cmake;C:\Users\orbp\source\repos\winafl\CMakeFiles\3.16.0\CMakeRCCompiler.cmake;C:\Users\orbp\source\repos\winafl\CMakeFiles\3.16.0\CMakeSystem.cmake;C:\Users\orbp\source\repos\winafl\CMakeLists.txt;C:\Users\orbp\source\repos\winafl\DynamoRIO-Windows-7.1.0-1\cmake\DynamoRIOConfig.cmake;C:\Users\orbp\source\repos\winafl\DynamoRIO-Windows-7.1.0-1\cmake\DynamoRIOConfigVersion.cmake;C:\Users\orbp\source\repos\winafl\DynamoRIO-Windows-7.1.0-1\cmake\DynamoRIOTarget64-relwithdebinfo.cmake;C:\Users\orbp\source\repos\winafl\DynamoRIO-Windows-7.1.0-1\cmake\DynamoRIOTarget64.cmake;C:\Users\orbp\source\repos\winafl\DynamoRIO-Windows-7.1.0-1\drmemory\drmf\DRMFTarget64-debug.cmake;C:\Users\orbp\source\repos\winafl\DynamoRIO-Windows-7.1.0-1\drmemory\drmf\DRMFTarget64-relwithdebinfo.cmake;C:\Users\orbp\source\repos\winafl\DynamoRIO-Windows-7.1.0-1\drmemory\drmf\DRMFTarget64.cmake;C:\Users\orbp\source\repos\winafl\DynamoRIO-Windows-7.1.0-1\drmemory\drmf\DrMemoryFrameworkConfig.cmake;C:\Users\orbp\source\repos\winafl\DynamoRIO-Windows-7.1.0-1\drmemory\drmf\DrMemoryFrameworkConfigVersion.cmake;C:\Users\orbp\source\repos\winafl\third_party\processor-trace\CMakeLists.txt;C:\Users\orbp\source\repos\winafl\third_party\processor-trace\libipt\CMakeLists.txt;C:\Users\orbp\source\repos\winafl\third_party\processor-trace\libipt\include\intel-pt.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\orbp\source\repos\winafl\CMakeFiles\generate.stamp;C:\Users\orbp\source\repos\winafl\third_party\processor-trace\CMakeFiles\generate.stamp;C:\Users\orbp\source\repos\winafl\third_party\processor-trace\libipt\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

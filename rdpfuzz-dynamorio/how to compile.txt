@@ -1,0 +1,4 @@
+open "x64 Native Tools Command Prompt for VS 2017" as administrator
+cd C:\Users\orbp\source\repos\dynamorio4\build
+cmake -G"Visual Studio 15 Win64" ..
+cmake --build . --config RelWithDebInfo

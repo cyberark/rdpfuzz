@@ -1,0 +1,32 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.16/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/Platform/WindowsPaths.cmake
+C:/Users/orbp/source/repos/winafl/CMakeFiles/3.16.0/CMakeCCompiler.cmake
+C:/Users/orbp/source/repos/winafl/CMakeFiles/3.16.0/CMakeCXXCompiler.cmake
+C:/Users/orbp/source/repos/winafl/CMakeFiles/3.16.0/CMakeRCCompiler.cmake
+C:/Users/orbp/source/repos/winafl/CMakeFiles/3.16.0/CMakeSystem.cmake
+C:/Users/orbp/source/repos/winafl/CMakeLists.txt
+C:/Users/orbp/source/repos/winafl/DynamoRIO-Windows-7.1.0-1/cmake/DynamoRIOConfig.cmake
+C:/Users/orbp/source/repos/winafl/DynamoRIO-Windows-7.1.0-1/cmake/DynamoRIOConfigVersion.cmake
+C:/Users/orbp/source/repos/winafl/DynamoRIO-Windows-7.1.0-1/cmake/DynamoRIOTarget64-relwithdebinfo.cmake
+C:/Users/orbp/source/repos/winafl/DynamoRIO-Windows-7.1.0-1/cmake/DynamoRIOTarget64.cmake
+C:/Users/orbp/source/repos/winafl/DynamoRIO-Windows-7.1.0-1/drmemory/drmf/DRMFTarget64-debug.cmake
+C:/Users/orbp/source/repos/winafl/DynamoRIO-Windows-7.1.0-1/drmemory/drmf/DRMFTarget64-relwithdebinfo.cmake
+C:/Users/orbp/source/repos/winafl/DynamoRIO-Windows-7.1.0-1/drmemory/drmf/DRMFTarget64.cmake
+C:/Users/orbp/source/repos/winafl/DynamoRIO-Windows-7.1.0-1/drmemory/drmf/DrMemoryFrameworkConfig.cmake
+C:/Users/orbp/source/repos/winafl/DynamoRIO-Windows-7.1.0-1/drmemory/drmf/DrMemoryFrameworkConfigVersion.cmake

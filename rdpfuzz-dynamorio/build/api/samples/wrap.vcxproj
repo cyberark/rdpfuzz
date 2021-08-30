@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8866334A-B1CB-38A2-B4A6-C11CC7F6614F}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>wrap</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">wrap.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">wrap</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\cmake\..\include;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\..\..\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>X86_64;WINDOWS;DR_HOST_X86;DR_HOST_X64;SHOW_RESULTS;SHOW_SYMBOLS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo";wrap_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;X86_64;WINDOWS;DR_HOST_X86;DR_HOST_X64;SHOW_RESULTS;SHOW_SYMBOLS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\";wrap_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\cmake\..\include;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\..\..\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\cmake\..\include;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\..\..\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "Usage: pass to drconfig or drrun: -c C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/api/samples/../bin/wrap.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>libcmt.lib;libvcruntime.lib;libucrt.lib;..\..\ext\lib64\release\drwrap.lib;..\..\ext\lib64\release\drmgr.lib;..\..\ext\lib64\release\drcontainers.lib;..\..\lib64\release\dynamorio.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /subsystem:console,5.02 /opt:ref /opt:icf /pdbcompress /opt:ref /opt:icf /pdbcompress /nodefaultlib /base:0x72000000 /dynamicbase:no /safeseh:no</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/api/bin/wrap.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/api/bin/wrap.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\api\samples\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/orbp/source/repos/rdpfuzz-dynamorio/api/samples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -HC:/Users/orbp/source/repos/rdpfuzz-dynamorio -BC:/Users/orbp/source/repos/rdpfuzz-dynamorio/build --check-stamp-file C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/api/samples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/orbp/source/repos/rdpfuzz-dynamorio/api/samples/CMakeLists.txt;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\api\samples\CMakeLists.txt;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\api\samples\bbbuf.c;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\api\samples\bbcount.c;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\api\samples\bbsize.c;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\api\samples\cbr.c;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\api\samples\cbrtrace.c;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\api\samples\countcalls.c;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\api\samples\div.c;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\api\samples\empty.c;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\api\samples\hot_bbcount.c;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\api\samples\inc2add.c;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\api\samples\inline.c;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\api\samples\inscount.cpp;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\api\samples\instrace_simple.c;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\api\samples\instrace_x86.c;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\api\samples\instrcalls.c;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\api\samples\memtrace_simple.c;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\api\samples\memtrace_x86.c;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\api\samples\memval_simple.c;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\api\samples\modxfer.c;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\api\samples\modxfer_app2lib.c;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\api\samples\opcode_count.cpp;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\api\samples\opcodes.c;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\api\samples\prefetch.c;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\api\samples\signal.c;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\api\samples\stats.c;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\api\samples\stl_test.cpp;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\api\samples\syscall.c;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\api\samples\tracedump.c;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\api\samples\utils.c;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\api\samples\utils.h;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\api\samples\wrap.c;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\CMakeLists-public.txt.in;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\cmake\DynamoRIOConfig.cmake;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\cmake\DynamoRIOConfigVersion.cmake;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\api\samples\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api\samples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\api\samples\wrap.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalOptions) /FS</AdditionalOptions>
+      <BufferSecurityCheck Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</BufferSecurityCheck>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4100;4127;4054;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</MultiProcessorCompilation>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MaxSpeed</Optimization>
+      <RuntimeLibrary Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MultiThreaded</RuntimeLibrary>
+      <StringPooling Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</StringPooling>
+      <SuppressStartupBanner Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</SuppressStartupBanner>
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\ZERO_CHECK.vcxproj">
+      <Project>{9EF0F1F9-7D7A-3489-A926-230F66881ABF}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api_headers.vcxproj">
+      <Project>{1B5C6675-E7F1-3A48-979F-9D3D5F600920}</Project>
+      <Name>api_headers</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\ext\drcontainers\drcontainers.vcxproj">
+      <Project>{108FFC7E-15BD-3A03-869D-160792EABBD9}</Project>
+      <Name>drcontainers</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\ext\drmgr\drmgr.vcxproj">
+      <Project>{ED04A569-3992-3233-875C-BF6F09C2C66F}</Project>
+      <Name>drmgr</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\ext\drwrap\drwrap.vcxproj">
+      <Project>{D0487DE0-BC3C-3C9A-A332-A98165EEECC1}</Project>
+      <Name>drwrap</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\core\dynamorio.vcxproj">
+      <Project>{E385EF93-6313-3C36-92D9-8FD352592AC4}</Project>
+      <Name>dynamorio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

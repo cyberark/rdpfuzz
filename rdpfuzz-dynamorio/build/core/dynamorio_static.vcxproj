@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{445BC705-38B8-34E7-AB3E-9D882E236742}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>dynamorio_static</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\lib64\release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">dynamorio_static.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">dynamorio_static</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\drlibc;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\ir\x86;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\arch\x86;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\win32;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\ir;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\arch;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\lib;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\include\annotations;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /FS /Gs65536</AdditionalOptions>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>RC_IS_CORE;INCLUDE_EVENTS;STATIC_LIBRARY;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;RC_IS_CORE;INCLUDE_EVENTS;STATIC_LIBRARY;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\drlibc;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\ir\x86;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\arch\x86;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\win32;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\ir;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\arch;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\lib;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\include\annotations;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\drlibc;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\ir\x86;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\arch\x86;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\win32;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\ir;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\arch;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\lib;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\include\annotations;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\options.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\dynamo.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\fragment.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\fcache.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\link.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\dispatch.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\emit.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\utils.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\config.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\stats.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\heap.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\monitor.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\perfctr.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\vmareas.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\rct.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\hotpatch.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\hashtable.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\module_list.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\moduledb.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\perscache.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\nudge.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\synch.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\buildmark.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\loader_shared.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\io.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\native_exec.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\lib\instrument.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\translate.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\annotations.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\jit_opt.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\arch\arch.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\arch\emit_utils_shared.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\arch\x86\emit_utils.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\ir\opnd_shared.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\ir\x86\opnd.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\ir\instr_shared.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\ir\x86\instr.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\ir\instrlist.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\ir\decode_shared.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\ir\x86\decode.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\ir\encode_shared.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\ir\x86\encode.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\ir\disassemble_shared.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\ir\x86\disassemble.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\ir\ir_utils_shared.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\ir\x86\ir_utils.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\ir\x86\decode_table.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\ir\x86\decode_fast.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\arch\interp.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\arch\proc_shared.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\arch\x86\proc.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\arch\mangle_shared.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\arch\x86\mangle.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\arch\clean_call_opt_shared.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\arch\x86\clean_call_opt.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\arch\steal_reg.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\arch\x86_code.c" />
+    <Object Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\core\x86.asm_core.obj" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\arch\x86\optimize.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\arch\sideline.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\arch\retcheck.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\arch\x86\x86_to_x64.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\win32\eventlog.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\win32\os.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\win32\syscall.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\win32\callback.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\win32\drmarker.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\win32\ntdll.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\win32\ntdll_shared.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\win32\inject.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\win32\inject_shared.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\win32\module.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\win32\module_shared.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\win32\native_pe.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\win32\diagnost.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\win32\aslr.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\win32\loader.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\win32\drwinapi\drwinapi.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\win32\drwinapi\ntdll_redir.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\win32\drwinapi\kernel32_redir.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\win32\drwinapi\kernel32_proc.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\win32\drwinapi\kernel32_lib.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\win32\drwinapi\kernel32_mem.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\win32\drwinapi\kernel32_file.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\win32\drwinapi\kernel32_sync.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\win32\drwinapi\kernel32_misc.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\win32\drwinapi\rpcrt4_redir.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\win32\drwinapi\advapi32_redir.c" />
+    <ResourceCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\win32\resources.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\ZERO_CHECK.vcxproj">
+      <Project>{9EF0F1F9-7D7A-3489-A926-230F66881ABF}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api_headers.vcxproj">
+      <Project>{1B5C6675-E7F1-3A48-979F-9D3D5F600920}</Project>
+      <Name>api_headers</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\core\drlibc.vcxproj">
+      <Project>{29EF12A2-267A-3D02-8AC9-CDFD80975879}</Project>
+      <Name>drlibc</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\core\generate_events.vcxproj">
+      <Project>{0B04B752-EDDE-319D-8D64-9F536179EB1F}</Project>
+      <Name>generate_events</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\core\generate_syslog.vcxproj">
+      <Project>{AF6A6B43-7EBE-3179-9665-05851FCED07A}</Project>
+      <Name>generate_syslog</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\core\generate_x86.asm_core.vcxproj">
+      <Project>{8CAB63F7-87CB-34F6-BEC4-E0079DB672F8}</Project>
+      <Name>generate_x86.asm_core</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\core\ntdll_imports.vcxproj">
+      <Project>{E8AEE400-724D-3C44-99CE-85AE9F748FDF}</Project>
+      <Name>ntdll_imports</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

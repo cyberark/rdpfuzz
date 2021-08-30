@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{29EF12A2-267A-3D02-8AC9-CDFD80975879}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>drlibc</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\lib64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">drlibc.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">drlibc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\drlibc;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\ir\x86;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\arch\x86;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\win32;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\ir;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\arch;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\lib;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\include\annotations;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /FS</AdditionalOptions>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\drlibc;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\ir\x86;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\arch\x86;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\win32;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\ir;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\arch;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\lib;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\include\annotations;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\drlibc;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\ir\x86;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\arch\x86;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\win32;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\ir;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\arch;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\lib;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\include\annotations;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Object Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\core\drlibc_xarch.asm_core.obj" />
+    <Object Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\core\drlibc_x86.asm.obj" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\drlibc\drlibc.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\drlibc\drlibc_notdr_dcxt.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\drlibc\drlibc_notdr_error.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\drlibc\drlibc_notdr_ignoreassert.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\drlibc\drlibc_notdr_logfile.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\drlibc\drlibc_notdr_printlog.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\drlibc\drlibc_notdr_report.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\drlibc\drlibc_notdr_saferead.c" />
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\core\drlibc\drlibc_notdr_stats.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\ZERO_CHECK.vcxproj">
+      <Project>{9EF0F1F9-7D7A-3489-A926-230F66881ABF}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\core\generate_drlibc_x86.asm.vcxproj">
+      <Project>{E9E5A4A0-91DF-3E20-8314-F2E8FCFD7973}</Project>
+      <Name>generate_drlibc_x86.asm</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\core\generate_drlibc_xarch.asm_core.vcxproj">
+      <Project>{6C2E2773-11CC-3DF2-9FFA-B94A1910D00D}</Project>
+      <Name>generate_drlibc_xarch.asm_core</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\core\generate_events.vcxproj">
+      <Project>{0B04B752-EDDE-319D-8D64-9F536179EB1F}</Project>
+      <Name>generate_events</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\core\generate_syslog.vcxproj">
+      <Project>{AF6A6B43-7EBE-3179-9665-05851FCED07A}</Project>
+      <Name>generate_syslog</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

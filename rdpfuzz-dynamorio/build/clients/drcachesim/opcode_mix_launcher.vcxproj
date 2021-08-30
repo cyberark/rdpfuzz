@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1887C823-BA3F-3731-8B85-55FD5E73F239}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>opcode_mix_launcher</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\clients\bin64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">opcode_mix_launcher.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">opcode_mix_launcher</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\cmake\..\include;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\ext\include;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\common;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\reader;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\tracer;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /FS</AdditionalOptions>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4100;4127;4054</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>X64;X86_64;WINDOWS;DR_HOST_X86;DR_HOST_X64;NDEBUG;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;X64;X86_64;WINDOWS;DR_HOST_X86;DR_HOST_X64;NDEBUG;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\cmake\..\include;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\ext\include;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\common;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\reader;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\tracer;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\cmake\..\include;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\ext\include;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\common;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\reader;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\tracer;C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\lib64\release\drmemtrace_analyzer.lib;..\lib64\release\drmemtrace_opcode_mix.lib;..\lib64\release\drmemtrace_raw2trace.lib;..\..\ext\lib64\release\drcovlib_static.lib;..\..\lib64\drfrontendlib.lib;libcmt.lib;libvcruntime.lib;libucrt.lib;libcpmt.lib;libcmt.lib;libvcruntime.lib;libucrt.lib;..\..\lib64\release\dynamorio_static.lib;..\lib64\release\directory_iterator.lib;..\..\lib64\drfrontendlib.lib;..\..\ext\lib64\release\drutil_static.lib;..\..\ext\lib64\release\drx_static.lib;..\..\ext\lib64\release\drreg_static.lib;..\..\ext\lib64\release\drmgr_static.lib;..\..\ext\lib64\release\drcontainers.lib;..\..\lib64\release\dynamorio.lib;libcmt.lib;..\..\lib64\drlibc.lib;Psapi.lib;..\..\lib64\ntdll_imports.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /subsystem:console,5.02 /opt:ref /opt:icf /pdbcompress</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/clients/lib64/release/opcode_mix_launcher.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/clients/bin64/opcode_mix_launcher.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\clients\drcachesim\tools\opcode_mix_launcher.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\ZERO_CHECK.vcxproj">
+      <Project>{9EF0F1F9-7D7A-3489-A926-230F66881ABF}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\api_headers.vcxproj">
+      <Project>{1B5C6675-E7F1-3A48-979F-9D3D5F600920}</Project>
+      <Name>api_headers</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\clients\drcachesim\directory_iterator.vcxproj">
+      <Project>{2CA2F4DD-321D-34D2-8F50-9CB883C3D3BF}</Project>
+      <Name>directory_iterator</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\ext\drcontainers\drcontainers.vcxproj">
+      <Project>{108FFC7E-15BD-3A03-869D-160792EABBD9}</Project>
+      <Name>drcontainers</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\ext\drcovlib\drcovlib_static.vcxproj">
+      <Project>{5F2A0520-D462-3249-BB21-837C5F0432BF}</Project>
+      <Name>drcovlib_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\libutil\drfrontendlib.vcxproj">
+      <Project>{25F586E2-D58E-322A-B4D0-FBB4DFB163D0}</Project>
+      <Name>drfrontendlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\core\drlibc.vcxproj">
+      <Project>{29EF12A2-267A-3D02-8AC9-CDFD80975879}</Project>
+      <Name>drlibc</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\clients\drcachesim\drmemtrace_analyzer.vcxproj">
+      <Project>{98F2F1C3-29FE-352E-931D-94209DD1407B}</Project>
+      <Name>drmemtrace_analyzer</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\clients\drcachesim\drmemtrace_opcode_mix.vcxproj">
+      <Project>{E856B4F5-14A9-333F-A989-AD5120262078}</Project>
+      <Name>drmemtrace_opcode_mix</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\clients\drcachesim\drmemtrace_raw2trace.vcxproj">
+      <Project>{DD36936D-EE7C-3B7D-8D38-131694416E76}</Project>
+      <Name>drmemtrace_raw2trace</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\ext\drmgr\drmgr_static.vcxproj">
+      <Project>{D958BE2C-5D1C-31DC-9F16-6121B1D2FF4E}</Project>
+      <Name>drmgr_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\ext\drreg\drreg_static.vcxproj">
+      <Project>{65F17883-1116-3156-9FB3-5D4D4CB03A57}</Project>
+      <Name>drreg_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\ext\drutil\drutil_static.vcxproj">
+      <Project>{87DE7936-F206-32FB-9DD8-18BB0B389801}</Project>
+      <Name>drutil_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\ext\drx\drx_static.vcxproj">
+      <Project>{64816B39-03A0-36CA-96F5-301EA93E1542}</Project>
+      <Name>drx_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\core\dynamorio.vcxproj">
+      <Project>{E385EF93-6313-3C36-92D9-8FD352592AC4}</Project>
+      <Name>dynamorio</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\core\dynamorio_static.vcxproj">
+      <Project>{445BC705-38B8-34E7-AB3E-9D882E236742}</Project>
+      <Name>dynamorio_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\core\ntdll_imports.vcxproj">
+      <Project>{E8AEE400-724D-3C44-99CE-85AE9F748FDF}</Project>
+      <Name>ntdll_imports</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

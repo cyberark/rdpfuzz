@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\orbp\source\repos\winafl\third_party\processor-trace\libipt\src\pt_error.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\winafl\third_party\processor-trace\libipt\src\pt_packet_decoder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\winafl\third_party\processor-trace\libipt\src\pt_query_decoder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\winafl\third_party\processor-trace\libipt\src\pt_encoder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\winafl\third_party\processor-trace\libipt\src\pt_sync.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\winafl\third_party\processor-trace\libipt\src\pt_version.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\winafl\third_party\processor-trace\libipt\src\pt_last_ip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\winafl\third_party\processor-trace\libipt\src\pt_tnt_cache.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\winafl\third_party\processor-trace\libipt\src\pt_ild.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\winafl\third_party\processor-trace\libipt\src\pt_image.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\winafl\third_party\processor-trace\libipt\src\pt_image_section_cache.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\winafl\third_party\processor-trace\libipt\src\pt_retstack.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\winafl\third_party\processor-trace\libipt\src\pt_insn_decoder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\winafl\third_party\processor-trace\libipt\src\pt_time.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\winafl\third_party\processor-trace\libipt\src\pt_asid.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\winafl\third_party\processor-trace\libipt\src\pt_event_queue.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\winafl\third_party\processor-trace\libipt\src\pt_packet.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\winafl\third_party\processor-trace\libipt\src\pt_decoder_function.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\winafl\third_party\processor-trace\libipt\src\pt_config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\winafl\third_party\processor-trace\libipt\src\pt_insn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\winafl\third_party\processor-trace\libipt\src\pt_block_decoder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\winafl\third_party\processor-trace\libipt\src\pt_block_cache.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\winafl\third_party\processor-trace\libipt\src\pt_msec_cache.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\winafl\third_party\processor-trace\libipt\src\pt_section.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\winafl\third_party\processor-trace\libipt\src\pt_section_file.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\orbp\source\repos\winafl\third_party\processor-trace\libipt\src\windows\pt_section_windows.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\orbp\source\repos\winafl\third_party\processor-trace\libipt\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{959BE3A5-0B92-337A-B629-A2432308DADE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

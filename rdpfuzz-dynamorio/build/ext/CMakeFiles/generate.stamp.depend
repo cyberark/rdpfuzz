@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/cmake/DynamoRIOConfig.cmake
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/cmake/DynamoRIOConfigVersion.cmake
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/ext/CMakeLists.txt
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/ext/drext.h
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/make/policies.cmake

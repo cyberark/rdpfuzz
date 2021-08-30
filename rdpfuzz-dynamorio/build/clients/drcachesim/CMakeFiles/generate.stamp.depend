@@ -1,0 +1,21 @@
+# CMake generation dependency list for this directory.
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/clients/drcachesim/CMakeLists.txt
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/clients/drcachesim/analysis_tool.h
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/clients/drcachesim/analyzer.h
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/clients/drcachesim/common/memref.h
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/clients/drcachesim/common/trace_entry.h
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/clients/drcachesim/common/utils.h
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/clients/drcachesim/reader/reader.h
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/clients/drcachesim/simulator/cache_simulator.h
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/clients/drcachesim/simulator/cache_simulator_create.h
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/clients/drcachesim/simulator/tlb_simulator_create.h
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/clients/drcachesim/tools/basic_counts_create.h
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/clients/drcachesim/tools/func_view_create.h
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/clients/drcachesim/tools/histogram_create.h
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/clients/drcachesim/tools/opcode_mix_create.h
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/clients/drcachesim/tools/reuse_distance_create.h
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/clients/drcachesim/tools/reuse_time_create.h
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/clients/drcachesim/tools/view_create.h
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/clients/drcachesim/tracer/drmemtrace.h
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/clients/drcachesim/tracer/raw2trace.h
+C:/Users/orbp/source/repos/rdpfuzz-dynamorio/make/policies.cmake

@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{532FDB4B-7321-358D-AD66-FACA7BF5E2DA}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>afl-analyze</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">afl-analyze.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">afl-analyze</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">afl-analyze.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">afl-analyze</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">afl-analyze.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">afl-analyze</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">afl-analyze.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">afl-analyze</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\orbp\source\repos\rdpfuzz-winafl\third_party\winipt\inc;C:\Users\orbp\source\repos\rdpfuzz-winafl\third_party\processor-trace\libipt\internal\include;C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\third_party\processor-trace\libipt\include;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\..\include;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\..\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>INTELPT;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;INTELPT;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\orbp\source\repos\rdpfuzz-winafl\third_party\winipt\inc;C:\Users\orbp\source\repos\rdpfuzz-winafl\third_party\processor-trace\libipt\internal\include;C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\third_party\processor-trace\libipt\include;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\..\include;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\..\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\orbp\source\repos\rdpfuzz-winafl\third_party\winipt\inc;C:\Users\orbp\source\repos\rdpfuzz-winafl\third_party\processor-trace\libipt\internal\include;C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\third_party\processor-trace\libipt\include;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\..\include;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\..\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/orbp/source/repos/rdpfuzz-winafl/RDPFuzzBuild64/Debug/afl-analyze.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/orbp/source/repos/rdpfuzz-winafl/RDPFuzzBuild64/bin/Debug/afl-analyze.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\orbp\source\repos\rdpfuzz-winafl\third_party\winipt\inc;C:\Users\orbp\source\repos\rdpfuzz-winafl\third_party\processor-trace\libipt\internal\include;C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\third_party\processor-trace\libipt\include;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\..\include;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\..\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>INTELPT;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;INTELPT;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\orbp\source\repos\rdpfuzz-winafl\third_party\winipt\inc;C:\Users\orbp\source\repos\rdpfuzz-winafl\third_party\processor-trace\libipt\internal\include;C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\third_party\processor-trace\libipt\include;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\..\include;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\..\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\orbp\source\repos\rdpfuzz-winafl\third_party\winipt\inc;C:\Users\orbp\source\repos\rdpfuzz-winafl\third_party\processor-trace\libipt\internal\include;C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\third_party\processor-trace\libipt\include;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\..\include;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\..\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/orbp/source/repos/rdpfuzz-winafl/RDPFuzzBuild64/Release/afl-analyze.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/orbp/source/repos/rdpfuzz-winafl/RDPFuzzBuild64/bin/Release/afl-analyze.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\orbp\source\repos\rdpfuzz-winafl\third_party\winipt\inc;C:\Users\orbp\source\repos\rdpfuzz-winafl\third_party\processor-trace\libipt\internal\include;C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\third_party\processor-trace\libipt\include;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\..\include;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\..\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>INTELPT;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;INTELPT;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\orbp\source\repos\rdpfuzz-winafl\third_party\winipt\inc;C:\Users\orbp\source\repos\rdpfuzz-winafl\third_party\processor-trace\libipt\internal\include;C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\third_party\processor-trace\libipt\include;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\..\include;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\..\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\orbp\source\repos\rdpfuzz-winafl\third_party\winipt\inc;C:\Users\orbp\source\repos\rdpfuzz-winafl\third_party\processor-trace\libipt\internal\include;C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\third_party\processor-trace\libipt\include;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\..\include;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\..\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/orbp/source/repos/rdpfuzz-winafl/RDPFuzzBuild64/MinSizeRel/afl-analyze.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/orbp/source/repos/rdpfuzz-winafl/RDPFuzzBuild64/bin/MinSizeRel/afl-analyze.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\orbp\source\repos\rdpfuzz-winafl\third_party\winipt\inc;C:\Users\orbp\source\repos\rdpfuzz-winafl\third_party\processor-trace\libipt\internal\include;C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\third_party\processor-trace\libipt\include;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\..\include;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\..\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>INTELPT;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;INTELPT;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\orbp\source\repos\rdpfuzz-winafl\third_party\winipt\inc;C:\Users\orbp\source\repos\rdpfuzz-winafl\third_party\processor-trace\libipt\internal\include;C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\third_party\processor-trace\libipt\include;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\..\include;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\..\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\orbp\source\repos\rdpfuzz-winafl\third_party\winipt\inc;C:\Users\orbp\source\repos\rdpfuzz-winafl\third_party\processor-trace\libipt\internal\include;C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\third_party\processor-trace\libipt\include;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\..\include;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\..\ext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/orbp/source/repos/rdpfuzz-winafl/RDPFuzzBuild64/RelWithDebInfo/afl-analyze.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/orbp/source/repos/rdpfuzz-winafl/RDPFuzzBuild64/bin/RelWithDebInfo/afl-analyze.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\orbp\source\repos\rdpfuzz-winafl\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/orbp/source/repos/rdpfuzz-winafl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -HC:/Users/orbp/source/repos/rdpfuzz-winafl -BC:/Users/orbp/source/repos/rdpfuzz-winafl/RDPFuzzBuild64 --check-stamp-file C:/Users/orbp/source/repos/rdpfuzz-winafl/RDPFuzzBuild64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/orbp/source/repos/rdpfuzz-winafl/CMakeLists.txt;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\DynamoRIOConfig.cmake;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\DynamoRIOConfigVersion.cmake;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\DynamoRIOTarget64-relwithdebinfo.cmake;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\DynamoRIOTarget64.cmake;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\drmemory\drmf\DRMFTarget64-debug.cmake;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\drmemory\drmf\DRMFTarget64-relwithdebinfo.cmake;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\drmemory\drmf\DRMFTarget64.cmake;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\drmemory\drmf\DrMemoryFrameworkConfig.cmake;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\drmemory\drmf\DrMemoryFrameworkConfigVersion.cmake;C:\Users\orbp\source\repos\rdpfuzz-winafl\CMakeLists.txt;C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\CMakeFiles\3.12.18081601-MSVC_2\CMakeCCompiler.cmake;C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\CMakeFiles\3.12.18081601-MSVC_2\CMakeCXXCompiler.cmake;C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\CMakeFiles\3.12.18081601-MSVC_2\CMakeRCCompiler.cmake;C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\CMakeFiles\3.12.18081601-MSVC_2\CMakeSystem.cmake;C:\Users\orbp\source\repos\rdpfuzz-winafl\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/orbp/source/repos/rdpfuzz-winafl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -HC:/Users/orbp/source/repos/rdpfuzz-winafl -BC:/Users/orbp/source/repos/rdpfuzz-winafl/RDPFuzzBuild64 --check-stamp-file C:/Users/orbp/source/repos/rdpfuzz-winafl/RDPFuzzBuild64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/orbp/source/repos/rdpfuzz-winafl/CMakeLists.txt;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\DynamoRIOConfig.cmake;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\DynamoRIOConfigVersion.cmake;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\DynamoRIOTarget64-relwithdebinfo.cmake;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\DynamoRIOTarget64.cmake;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\drmemory\drmf\DRMFTarget64-debug.cmake;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\drmemory\drmf\DRMFTarget64-relwithdebinfo.cmake;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\drmemory\drmf\DRMFTarget64.cmake;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\drmemory\drmf\DrMemoryFrameworkConfig.cmake;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\drmemory\drmf\DrMemoryFrameworkConfigVersion.cmake;C:\Users\orbp\source\repos\rdpfuzz-winafl\CMakeLists.txt;C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\CMakeFiles\3.12.18081601-MSVC_2\CMakeCCompiler.cmake;C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\CMakeFiles\3.12.18081601-MSVC_2\CMakeCXXCompiler.cmake;C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\CMakeFiles\3.12.18081601-MSVC_2\CMakeRCCompiler.cmake;C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\CMakeFiles\3.12.18081601-MSVC_2\CMakeSystem.cmake;C:\Users\orbp\source\repos\rdpfuzz-winafl\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/orbp/source/repos/rdpfuzz-winafl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -HC:/Users/orbp/source/repos/rdpfuzz-winafl -BC:/Users/orbp/source/repos/rdpfuzz-winafl/RDPFuzzBuild64 --check-stamp-file C:/Users/orbp/source/repos/rdpfuzz-winafl/RDPFuzzBuild64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/orbp/source/repos/rdpfuzz-winafl/CMakeLists.txt;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\DynamoRIOConfig.cmake;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\DynamoRIOConfigVersion.cmake;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\DynamoRIOTarget64-relwithdebinfo.cmake;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\DynamoRIOTarget64.cmake;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\drmemory\drmf\DRMFTarget64-debug.cmake;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\drmemory\drmf\DRMFTarget64-relwithdebinfo.cmake;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\drmemory\drmf\DRMFTarget64.cmake;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\drmemory\drmf\DrMemoryFrameworkConfig.cmake;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\drmemory\drmf\DrMemoryFrameworkConfigVersion.cmake;C:\Users\orbp\source\repos\rdpfuzz-winafl\CMakeLists.txt;C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\CMakeFiles\3.12.18081601-MSVC_2\CMakeCCompiler.cmake;C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\CMakeFiles\3.12.18081601-MSVC_2\CMakeCXXCompiler.cmake;C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\CMakeFiles\3.12.18081601-MSVC_2\CMakeRCCompiler.cmake;C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\CMakeFiles\3.12.18081601-MSVC_2\CMakeSystem.cmake;C:\Users\orbp\source\repos\rdpfuzz-winafl\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/orbp/source/repos/rdpfuzz-winafl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -HC:/Users/orbp/source/repos/rdpfuzz-winafl -BC:/Users/orbp/source/repos/rdpfuzz-winafl/RDPFuzzBuild64 --check-stamp-file C:/Users/orbp/source/repos/rdpfuzz-winafl/RDPFuzzBuild64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/orbp/source/repos/rdpfuzz-winafl/CMakeLists.txt;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\DynamoRIOConfig.cmake;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\DynamoRIOConfigVersion.cmake;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\DynamoRIOTarget64-relwithdebinfo.cmake;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\cmake\DynamoRIOTarget64.cmake;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\drmemory\drmf\DRMFTarget64-debug.cmake;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\drmemory\drmf\DRMFTarget64-relwithdebinfo.cmake;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\drmemory\drmf\DRMFTarget64.cmake;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\drmemory\drmf\DrMemoryFrameworkConfig.cmake;C:\Users\orbp\source\repos\DynamoRIO-Windows-8.0.18585\drmemory\drmf\DrMemoryFrameworkConfigVersion.cmake;C:\Users\orbp\source\repos\rdpfuzz-winafl\CMakeLists.txt;C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\CMakeFiles\3.12.18081601-MSVC_2\CMakeCCompiler.cmake;C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\CMakeFiles\3.12.18081601-MSVC_2\CMakeCXXCompiler.cmake;C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\CMakeFiles\3.12.18081601-MSVC_2\CMakeRCCompiler.cmake;C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\CMakeFiles\3.12.18081601-MSVC_2\CMakeSystem.cmake;C:\Users\orbp\source\repos\rdpfuzz-winafl\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\orbp\source\repos\rdpfuzz-winafl\afl-analyze.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\orbp\source\repos\rdpfuzz-winafl\RDPFuzzBuild64\ZERO_CHECK.vcxproj">
+      <Project>{7974409C-4946-334B-BC0F-E5840A9C5811}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

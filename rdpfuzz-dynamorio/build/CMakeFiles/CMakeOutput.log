@@ -1,0 +1,1143 @@
+The system is: Windows - 10.0.19041.0 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 19/11/2020 10:52:43.
+Project "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\3.12.18081601-MSVC_2\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdC.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdC.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\CL.exe /c /nologo /W0 /WX- /diagnostics:classic /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\3.12.18081601-MSVC_2\CompilerIdC\.\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\cl.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\CompilerIdC.tlog\unsuccessfulbuild".
+  Touching "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
+Done Building Project "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\3.12.18081601-MSVC_2\CompilerIdC\CompilerIdC.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.94
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/3.12.18081601-MSVC_2/CompilerIdC/CompilerIdC.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_9a977.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 19/11/2020 10:52:44.
+Project "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\cmTC_9a977.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_9a977.dir\Debug\".
+  Creating directory "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_9a977.dir\Debug\cmTC_9a977.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_9a977.dir\Debug\cmTC_9a977.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9a977.dir\Debug\\" /Fd"cmTC_9a977.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\testCCompiler.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27043 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9a977.dir\Debug\\" /Fd"cmTC_9a977.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\testCCompiler.c
+  testCCompiler.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\Debug\cmTC_9a977.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/CMakeTmp/Debug/cmTC_9a977.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/CMakeTmp/Debug/cmTC_9a977.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_9a977.dir\Debug\testCCompiler.obj
+  cmTC_9a977.vcxproj -> C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\Debug\cmTC_9a977.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_9a977.dir\Debug\cmTC_9a977.tlog\unsuccessfulbuild".
+  Touching "cmTC_9a977.dir\Debug\cmTC_9a977.tlog\cmTC_9a977.lastbuildstate".
+Done Building Project "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\cmTC_9a977.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.13
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_a5ae0.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 19/11/2020 10:52:46.
+Project "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\cmTC_a5ae0.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_a5ae0.dir\Debug\".
+  Creating directory "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_a5ae0.dir\Debug\cmTC_a5ae0.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_a5ae0.dir\Debug\cmTC_a5ae0.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a5ae0.dir\Debug\\" /Fd"cmTC_a5ae0.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27043 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a5ae0.dir\Debug\\" /Fd"cmTC_a5ae0.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c"
+  CMakeCCompilerABI.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\Debug\cmTC_a5ae0.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/CMakeTmp/Debug/cmTC_a5ae0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/CMakeTmp/Debug/cmTC_a5ae0.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_a5ae0.dir\Debug\CMakeCCompilerABI.obj
+  cmTC_a5ae0.vcxproj -> C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\Debug\cmTC_a5ae0.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_a5ae0.dir\Debug\cmTC_a5ae0.tlog\unsuccessfulbuild".
+  Touching "cmTC_a5ae0.dir\Debug\cmTC_a5ae0.tlog\cmTC_a5ae0.lastbuildstate".
+Done Building Project "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\cmTC_a5ae0.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.88
+
+
+
+
+Detecting C [] compiler features compiled with the following output:
+Change Dir: C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_40761.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 19/11/2020 10:52:47.
+Project "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\cmTC_40761.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_40761.dir\Debug\".
+  Creating directory "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_40761.dir\Debug\cmTC_40761.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_40761.dir\Debug\cmTC_40761.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_40761.dir\Debug\\" /Fd"cmTC_40761.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\feature_tests.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27043 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_40761.dir\Debug\\" /Fd"cmTC_40761.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\feature_tests.c
+  feature_tests.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\Debug\cmTC_40761.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/CMakeTmp/Debug/cmTC_40761.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/CMakeTmp/Debug/cmTC_40761.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_40761.dir\Debug\feature_tests.obj
+  cmTC_40761.vcxproj -> C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\Debug\cmTC_40761.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_40761.dir\Debug\cmTC_40761.tlog\unsuccessfulbuild".
+  Touching "cmTC_40761.dir\Debug\cmTC_40761.tlog\cmTC_40761.lastbuildstate".
+Done Building Project "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\cmTC_40761.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.90
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_variadic_macros
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 19/11/2020 10:52:48.
+Project "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\3.12.18081601-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\CL.exe /c /nologo /W0 /WX- /diagnostics:classic /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\3.12.18081601-MSVC_2\CompilerIdCXX\.\CompilerIdCXX.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\cl.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\CompilerIdCXX.tlog\unsuccessfulbuild".
+  Touching "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
+Done Building Project "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\3.12.18081601-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.69
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+
+The CXX compiler identification is MSVC, found in "C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/3.12.18081601-MSVC_2/CompilerIdCXX/CompilerIdCXX.exe"
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_f3174.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 19/11/2020 10:52:49.
+Project "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\cmTC_f3174.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_f3174.dir\Debug\".
+  Creating directory "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_f3174.dir\Debug\cmTC_f3174.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_f3174.dir\Debug\cmTC_f3174.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_f3174.dir\Debug\\" /Fd"cmTC_f3174.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27043 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_f3174.dir\Debug\\" /Fd"cmTC_f3174.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+  testCXXCompiler.cxx
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\Debug\cmTC_f3174.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/CMakeTmp/Debug/cmTC_f3174.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/CMakeTmp/Debug/cmTC_f3174.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_f3174.dir\Debug\testCXXCompiler.obj
+  cmTC_f3174.vcxproj -> C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\Debug\cmTC_f3174.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_f3174.dir\Debug\cmTC_f3174.tlog\unsuccessfulbuild".
+  Touching "cmTC_f3174.dir\Debug\cmTC_f3174.tlog\cmTC_f3174.lastbuildstate".
+Done Building Project "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\cmTC_f3174.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.82
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_791fc.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 19/11/2020 10:52:50.
+Project "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\cmTC_791fc.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_791fc.dir\Debug\".
+  Creating directory "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_791fc.dir\Debug\cmTC_791fc.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_791fc.dir\Debug\cmTC_791fc.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_791fc.dir\Debug\\" /Fd"cmTC_791fc.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27043 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_791fc.dir\Debug\\" /Fd"cmTC_791fc.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp"
+  CMakeCXXCompilerABI.cpp
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\Debug\cmTC_791fc.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/CMakeTmp/Debug/cmTC_791fc.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/CMakeTmp/Debug/cmTC_791fc.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_791fc.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTC_791fc.vcxproj -> C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\Debug\cmTC_791fc.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_791fc.dir\Debug\cmTC_791fc.tlog\unsuccessfulbuild".
+  Touching "cmTC_791fc.dir\Debug\cmTC_791fc.tlog\cmTC_791fc.lastbuildstate".
+Done Building Project "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\cmTC_791fc.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.98
+
+
+
+
+Detecting CXX [] compiler features compiled with the following output:
+Change Dir: C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_78d64.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 19/11/2020 10:52:51.
+Project "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\cmTC_78d64.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_78d64.dir\Debug\".
+  Creating directory "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_78d64.dir\Debug\cmTC_78d64.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_78d64.dir\Debug\cmTC_78d64.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_78d64.dir\Debug\\" /Fd"cmTC_78d64.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\feature_tests.cxx
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27043 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_78d64.dir\Debug\\" /Fd"cmTC_78d64.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\feature_tests.cxx
+  feature_tests.cxx
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\Debug\cmTC_78d64.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/CMakeTmp/Debug/cmTC_78d64.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/CMakeTmp/Debug/cmTC_78d64.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_78d64.dir\Debug\feature_tests.obj
+  cmTC_78d64.vcxproj -> C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\Debug\cmTC_78d64.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_78d64.dir\Debug\cmTC_78d64.tlog\unsuccessfulbuild".
+  Touching "cmTC_78d64.dir\Debug\cmTC_78d64.tlog\cmTC_78d64.lastbuildstate".
+Done Building Project "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\cmTC_78d64.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.86
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+The system is: Windows - 10.0.19041.0 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 19/11/2020 10:54:33.
+Project "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\3.12.18081601-MSVC_2\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdC.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdC.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /nologo /W0 /WX- /diagnostics:classic /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X64 Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\3.12.18081601-MSVC_2\CompilerIdC\.\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x64\cl.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\CompilerIdC.tlog\unsuccessfulbuild".
+  Touching "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
+Done Building Project "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\3.12.18081601-MSVC_2\CompilerIdC\CompilerIdC.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.78
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/3.12.18081601-MSVC_2/CompilerIdC/CompilerIdC.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_67531.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 19/11/2020 10:54:34.
+Project "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\cmTC_67531.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_67531.dir\Debug\".
+  Creating directory "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_67531.dir\Debug\cmTC_67531.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_67531.dir\Debug\cmTC_67531.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_67531.dir\Debug\\" /Fd"cmTC_67531.dir\Debug\vc141.pdb" /Gd /TC /FC /errorReport:queue C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\testCCompiler.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27043 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_67531.dir\Debug\\" /Fd"cmTC_67531.dir\Debug\vc141.pdb" /Gd /TC /FC /errorReport:queue C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\testCCompiler.c
+  testCCompiler.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\Debug\cmTC_67531.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/CMakeTmp/Debug/cmTC_67531.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/CMakeTmp/Debug/cmTC_67531.lib" /MACHINE:X64  /machine:x64 cmTC_67531.dir\Debug\testCCompiler.obj
+  cmTC_67531.vcxproj -> C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\Debug\cmTC_67531.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_67531.dir\Debug\cmTC_67531.tlog\unsuccessfulbuild".
+  Touching "cmTC_67531.dir\Debug\cmTC_67531.tlog\cmTC_67531.lastbuildstate".
+Done Building Project "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\cmTC_67531.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.78
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_76449.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 19/11/2020 10:54:35.
+Project "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\cmTC_76449.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_76449.dir\Debug\".
+  Creating directory "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_76449.dir\Debug\cmTC_76449.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_76449.dir\Debug\cmTC_76449.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_76449.dir\Debug\\" /Fd"cmTC_76449.dir\Debug\vc141.pdb" /Gd /TC /FC /errorReport:queue "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27043 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_76449.dir\Debug\\" /Fd"cmTC_76449.dir\Debug\vc141.pdb" /Gd /TC /FC /errorReport:queue "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c"
+  CMakeCCompilerABI.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\Debug\cmTC_76449.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/CMakeTmp/Debug/cmTC_76449.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/CMakeTmp/Debug/cmTC_76449.lib" /MACHINE:X64  /machine:x64 cmTC_76449.dir\Debug\CMakeCCompilerABI.obj
+  cmTC_76449.vcxproj -> C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\Debug\cmTC_76449.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_76449.dir\Debug\cmTC_76449.tlog\unsuccessfulbuild".
+  Touching "cmTC_76449.dir\Debug\cmTC_76449.tlog\cmTC_76449.lastbuildstate".
+Done Building Project "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\cmTC_76449.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.91
+
+
+
+
+Detecting C [] compiler features compiled with the following output:
+Change Dir: C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_ff090.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 19/11/2020 10:54:36.
+Project "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\cmTC_ff090.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_ff090.dir\Debug\".
+  Creating directory "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_ff090.dir\Debug\cmTC_ff090.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_ff090.dir\Debug\cmTC_ff090.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ff090.dir\Debug\\" /Fd"cmTC_ff090.dir\Debug\vc141.pdb" /Gd /TC /FC /errorReport:queue C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\feature_tests.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27043 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ff090.dir\Debug\\" /Fd"cmTC_ff090.dir\Debug\vc141.pdb" /Gd /TC /FC /errorReport:queue C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\feature_tests.c
+  feature_tests.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\Debug\cmTC_ff090.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/CMakeTmp/Debug/cmTC_ff090.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/CMakeTmp/Debug/cmTC_ff090.lib" /MACHINE:X64  /machine:x64 cmTC_ff090.dir\Debug\feature_tests.obj
+  cmTC_ff090.vcxproj -> C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\Debug\cmTC_ff090.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_ff090.dir\Debug\cmTC_ff090.tlog\unsuccessfulbuild".
+  Touching "cmTC_ff090.dir\Debug\cmTC_ff090.tlog\cmTC_ff090.lastbuildstate".
+Done Building Project "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\cmTC_ff090.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.85
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_variadic_macros
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 19/11/2020 10:54:37.
+Project "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\3.12.18081601-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /nologo /W0 /WX- /diagnostics:classic /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X64 Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\3.12.18081601-MSVC_2\CompilerIdCXX\.\CompilerIdCXX.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x64\cl.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\CompilerIdCXX.tlog\unsuccessfulbuild".
+  Touching "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
+Done Building Project "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\3.12.18081601-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.73
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+
+The CXX compiler identification is MSVC, found in "C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/3.12.18081601-MSVC_2/CompilerIdCXX/CompilerIdCXX.exe"
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_fc5ba.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 19/11/2020 10:54:38.
+Project "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\cmTC_fc5ba.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_fc5ba.dir\Debug\".
+  Creating directory "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_fc5ba.dir\Debug\cmTC_fc5ba.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_fc5ba.dir\Debug\cmTC_fc5ba.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_fc5ba.dir\Debug\\" /Fd"cmTC_fc5ba.dir\Debug\vc141.pdb" /Gd /TP /FC /errorReport:queue C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27043 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_fc5ba.dir\Debug\\" /Fd"cmTC_fc5ba.dir\Debug\vc141.pdb" /Gd /TP /FC /errorReport:queue C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+  testCXXCompiler.cxx
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\Debug\cmTC_fc5ba.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/CMakeTmp/Debug/cmTC_fc5ba.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/CMakeTmp/Debug/cmTC_fc5ba.lib" /MACHINE:X64  /machine:x64 cmTC_fc5ba.dir\Debug\testCXXCompiler.obj
+  cmTC_fc5ba.vcxproj -> C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\Debug\cmTC_fc5ba.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_fc5ba.dir\Debug\cmTC_fc5ba.tlog\unsuccessfulbuild".
+  Touching "cmTC_fc5ba.dir\Debug\cmTC_fc5ba.tlog\cmTC_fc5ba.lastbuildstate".
+Done Building Project "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\cmTC_fc5ba.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.87
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_54a40.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 19/11/2020 10:54:39.
+Project "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\cmTC_54a40.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_54a40.dir\Debug\".
+  Creating directory "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_54a40.dir\Debug\cmTC_54a40.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_54a40.dir\Debug\cmTC_54a40.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_54a40.dir\Debug\\" /Fd"cmTC_54a40.dir\Debug\vc141.pdb" /Gd /TP /FC /errorReport:queue "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27043 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_54a40.dir\Debug\\" /Fd"cmTC_54a40.dir\Debug\vc141.pdb" /Gd /TP /FC /errorReport:queue "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp"
+  CMakeCXXCompilerABI.cpp
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\Debug\cmTC_54a40.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/CMakeTmp/Debug/cmTC_54a40.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/CMakeTmp/Debug/cmTC_54a40.lib" /MACHINE:X64  /machine:x64 cmTC_54a40.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTC_54a40.vcxproj -> C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\Debug\cmTC_54a40.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_54a40.dir\Debug\cmTC_54a40.tlog\unsuccessfulbuild".
+  Touching "cmTC_54a40.dir\Debug\cmTC_54a40.tlog\cmTC_54a40.lastbuildstate".
+Done Building Project "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\cmTC_54a40.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.82
+
+
+
+
+Detecting CXX [] compiler features compiled with the following output:
+Change Dir: C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_41628.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 19/11/2020 10:54:40.
+Project "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\cmTC_41628.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_41628.dir\Debug\".
+  Creating directory "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_41628.dir\Debug\cmTC_41628.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_41628.dir\Debug\cmTC_41628.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_41628.dir\Debug\\" /Fd"cmTC_41628.dir\Debug\vc141.pdb" /Gd /TP /FC /errorReport:queue C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\feature_tests.cxx
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27043 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_41628.dir\Debug\\" /Fd"cmTC_41628.dir\Debug\vc141.pdb" /Gd /TP /FC /errorReport:queue C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\feature_tests.cxx
+  feature_tests.cxx
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\Debug\cmTC_41628.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/CMakeTmp/Debug/cmTC_41628.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/orbp/source/repos/dynamorio4/build/CMakeFiles/CMakeTmp/Debug/cmTC_41628.lib" /MACHINE:X64  /machine:x64 cmTC_41628.dir\Debug\feature_tests.obj
+  cmTC_41628.vcxproj -> C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\Debug\cmTC_41628.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_41628.dir\Debug\cmTC_41628.tlog\unsuccessfulbuild".
+  Touching "cmTC_41628.dir\Debug\cmTC_41628.tlog\cmTC_41628.lastbuildstate".
+Done Building Project "C:\Users\orbp\source\repos\dynamorio4\build\CMakeFiles\CMakeTmp\cmTC_41628.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.80
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+The system is: Windows - 10.0.19041.0 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 14/01/2021 10:21:40.
+Project "C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\3.12.18081601-MSVC_2\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdC.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdC.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /nologo /W0 /WX- /diagnostics:classic /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X64 Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\3.12.18081601-MSVC_2\CompilerIdC\.\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x64\cl.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\CompilerIdC.tlog\unsuccessfulbuild".
+  Touching "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
+Done Building Project "C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\3.12.18081601-MSVC_2\CompilerIdC\CompilerIdC.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.82
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/CMakeFiles/3.12.18081601-MSVC_2/CompilerIdC/CompilerIdC.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_eb65e.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 14/01/2021 10:21:41.
+Project "C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\CMakeTmp\cmTC_eb65e.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_eb65e.dir\Debug\".
+  Creating directory "C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_eb65e.dir\Debug\cmTC_eb65e.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_eb65e.dir\Debug\cmTC_eb65e.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_eb65e.dir\Debug\\" /Fd"cmTC_eb65e.dir\Debug\vc141.pdb" /Gd /TC /FC /errorReport:queue "C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\CMakeTmp\testCCompiler.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27043 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_eb65e.dir\Debug\\" /Fd"cmTC_eb65e.dir\Debug\vc141.pdb" /Gd /TC /FC /errorReport:queue "C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\CMakeTmp\testCCompiler.c"
+  testCCompiler.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\CMakeTmp\Debug\cmTC_eb65e.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/CMakeFiles/CMakeTmp/Debug/cmTC_eb65e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/CMakeFiles/CMakeTmp/Debug/cmTC_eb65e.lib" /MACHINE:X64  /machine:x64 cmTC_eb65e.dir\Debug\testCCompiler.obj
+  cmTC_eb65e.vcxproj -> C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\CMakeTmp\Debug\cmTC_eb65e.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_eb65e.dir\Debug\cmTC_eb65e.tlog\unsuccessfulbuild".
+  Touching "cmTC_eb65e.dir\Debug\cmTC_eb65e.tlog\cmTC_eb65e.lastbuildstate".
+Done Building Project "C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\CMakeTmp\cmTC_eb65e.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.00
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_f3989.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 14/01/2021 10:21:42.
+Project "C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\CMakeTmp\cmTC_f3989.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_f3989.dir\Debug\".
+  Creating directory "C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_f3989.dir\Debug\cmTC_f3989.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_f3989.dir\Debug\cmTC_f3989.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f3989.dir\Debug\\" /Fd"cmTC_f3989.dir\Debug\vc141.pdb" /Gd /TC /FC /errorReport:queue "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27043 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f3989.dir\Debug\\" /Fd"cmTC_f3989.dir\Debug\vc141.pdb" /Gd /TC /FC /errorReport:queue "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c"
+  CMakeCCompilerABI.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\CMakeTmp\Debug\cmTC_f3989.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/CMakeFiles/CMakeTmp/Debug/cmTC_f3989.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/CMakeFiles/CMakeTmp/Debug/cmTC_f3989.lib" /MACHINE:X64  /machine:x64 cmTC_f3989.dir\Debug\CMakeCCompilerABI.obj
+  cmTC_f3989.vcxproj -> C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\CMakeTmp\Debug\cmTC_f3989.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_f3989.dir\Debug\cmTC_f3989.tlog\unsuccessfulbuild".
+  Touching "cmTC_f3989.dir\Debug\cmTC_f3989.tlog\cmTC_f3989.lastbuildstate".
+Done Building Project "C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\CMakeTmp\cmTC_f3989.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.85
+
+
+
+
+Detecting C [] compiler features compiled with the following output:
+Change Dir: C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_29b52.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 14/01/2021 10:21:43.
+Project "C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\CMakeTmp\cmTC_29b52.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_29b52.dir\Debug\".
+  Creating directory "C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_29b52.dir\Debug\cmTC_29b52.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_29b52.dir\Debug\cmTC_29b52.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_29b52.dir\Debug\\" /Fd"cmTC_29b52.dir\Debug\vc141.pdb" /Gd /TC /FC /errorReport:queue "C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\feature_tests.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27043 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_29b52.dir\Debug\\" /Fd"cmTC_29b52.dir\Debug\vc141.pdb" /Gd /TC /FC /errorReport:queue "C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\feature_tests.c"
+  feature_tests.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\CMakeTmp\Debug\cmTC_29b52.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/CMakeFiles/CMakeTmp/Debug/cmTC_29b52.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/CMakeFiles/CMakeTmp/Debug/cmTC_29b52.lib" /MACHINE:X64  /machine:x64 cmTC_29b52.dir\Debug\feature_tests.obj
+  cmTC_29b52.vcxproj -> C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\CMakeTmp\Debug\cmTC_29b52.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_29b52.dir\Debug\cmTC_29b52.tlog\unsuccessfulbuild".
+  Touching "cmTC_29b52.dir\Debug\cmTC_29b52.tlog\cmTC_29b52.lastbuildstate".
+Done Building Project "C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\CMakeTmp\cmTC_29b52.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.73
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_variadic_macros
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 14/01/2021 10:21:44.
+Project "C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\3.12.18081601-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /nologo /W0 /WX- /diagnostics:classic /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X64 Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\3.12.18081601-MSVC_2\CompilerIdCXX\.\CompilerIdCXX.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x64\cl.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\CompilerIdCXX.tlog\unsuccessfulbuild".
+  Touching "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
+Done Building Project "C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\3.12.18081601-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.61
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+
+The CXX compiler identification is MSVC, found in "C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/CMakeFiles/3.12.18081601-MSVC_2/CompilerIdCXX/CompilerIdCXX.exe"
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_fe9d0.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 14/01/2021 10:21:45.
+Project "C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\CMakeTmp\cmTC_fe9d0.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_fe9d0.dir\Debug\".
+  Creating directory "C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_fe9d0.dir\Debug\cmTC_fe9d0.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_fe9d0.dir\Debug\cmTC_fe9d0.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_fe9d0.dir\Debug\\" /Fd"cmTC_fe9d0.dir\Debug\vc141.pdb" /Gd /TP /FC /errorReport:queue "C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27043 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_fe9d0.dir\Debug\\" /Fd"cmTC_fe9d0.dir\Debug\vc141.pdb" /Gd /TP /FC /errorReport:queue "C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+  testCXXCompiler.cxx
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\CMakeTmp\Debug\cmTC_fe9d0.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/CMakeFiles/CMakeTmp/Debug/cmTC_fe9d0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/CMakeFiles/CMakeTmp/Debug/cmTC_fe9d0.lib" /MACHINE:X64  /machine:x64 cmTC_fe9d0.dir\Debug\testCXXCompiler.obj
+  cmTC_fe9d0.vcxproj -> C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\CMakeTmp\Debug\cmTC_fe9d0.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_fe9d0.dir\Debug\cmTC_fe9d0.tlog\unsuccessfulbuild".
+  Touching "cmTC_fe9d0.dir\Debug\cmTC_fe9d0.tlog\cmTC_fe9d0.lastbuildstate".
+Done Building Project "C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\CMakeTmp\cmTC_fe9d0.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.65
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_51163.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 14/01/2021 10:21:46.
+Project "C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\CMakeTmp\cmTC_51163.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_51163.dir\Debug\".
+  Creating directory "C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_51163.dir\Debug\cmTC_51163.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_51163.dir\Debug\cmTC_51163.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_51163.dir\Debug\\" /Fd"cmTC_51163.dir\Debug\vc141.pdb" /Gd /TP /FC /errorReport:queue "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27043 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_51163.dir\Debug\\" /Fd"cmTC_51163.dir\Debug\vc141.pdb" /Gd /TP /FC /errorReport:queue "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp"
+  CMakeCXXCompilerABI.cpp
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\CMakeTmp\Debug\cmTC_51163.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/CMakeFiles/CMakeTmp/Debug/cmTC_51163.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/CMakeFiles/CMakeTmp/Debug/cmTC_51163.lib" /MACHINE:X64  /machine:x64 cmTC_51163.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTC_51163.vcxproj -> C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\CMakeTmp\Debug\cmTC_51163.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_51163.dir\Debug\cmTC_51163.tlog\unsuccessfulbuild".
+  Touching "cmTC_51163.dir\Debug\cmTC_51163.tlog\cmTC_51163.lastbuildstate".
+Done Building Project "C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\CMakeTmp\cmTC_51163.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.72
+
+
+
+
+Detecting CXX [] compiler features compiled with the following output:
+Change Dir: C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_898a1.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 14/01/2021 10:21:47.
+Project "C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\CMakeTmp\cmTC_898a1.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_898a1.dir\Debug\".
+  Creating directory "C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_898a1.dir\Debug\cmTC_898a1.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_898a1.dir\Debug\cmTC_898a1.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_898a1.dir\Debug\\" /Fd"cmTC_898a1.dir\Debug\vc141.pdb" /Gd /TP /FC /errorReport:queue "C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\feature_tests.cxx"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27043 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_898a1.dir\Debug\\" /Fd"cmTC_898a1.dir\Debug\vc141.pdb" /Gd /TP /FC /errorReport:queue "C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\feature_tests.cxx"
+  feature_tests.cxx
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\CMakeTmp\Debug\cmTC_898a1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/CMakeFiles/CMakeTmp/Debug/cmTC_898a1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/orbp/source/repos/rdpfuzz-dynamorio/build/CMakeFiles/CMakeTmp/Debug/cmTC_898a1.lib" /MACHINE:X64  /machine:x64 cmTC_898a1.dir\Debug\feature_tests.obj
+  cmTC_898a1.vcxproj -> C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\CMakeTmp\Debug\cmTC_898a1.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_898a1.dir\Debug\cmTC_898a1.tlog\unsuccessfulbuild".
+  Touching "cmTC_898a1.dir\Debug\cmTC_898a1.tlog\cmTC_898a1.lastbuildstate".
+Done Building Project "C:\Users\orbp\source\repos\rdpfuzz-dynamorio\build\CMakeFiles\CMakeTmp\cmTC_898a1.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.72
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
